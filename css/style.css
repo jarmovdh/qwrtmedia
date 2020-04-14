@@ -1,0 +1,823 @@
+/*Prime elements*/
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f3f3f3;
+  color: black;
+  scroll-behavior: smooth;
+
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  text-align: left;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+}
+
+p {
+  font-family: 'Monda', sans-serif;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: black;
+}
+
+a {
+color: #98d6ea;
+}
+a:hover{
+  color: #ffcc00;
+}
+
+button {
+vertical-align: middle;
+float: right;
+
+
+}
+/*Custom Cursor*/
+
+.cursor {
+  width: 25px;
+  height: 25px;
+  border: 1.5px solid #808080	;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+
+.expand {
+  animation: cursorAnim .5s forwards;
+  border: 1.5px solid #808080	;
+}
+
+@keyframes cursorAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/*Barba*/
+.loading-screen{
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: red;
+  width: 0;
+  height: 100%;
+}
+
+.load-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+/*header nav*/
+
+
+#header {
+  width: 100%;
+  /*background-color: #42403c;
+    background: rgba(0, 0, 0, 0.7);*/
+  font-family: 'Monda', sans-serif;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  z-index: 99;
+
+
+}
+
+.nav {
+  float: right;
+  padding-right: 10%;
+
+
+}
+
+.nav li {
+  display: inline;
+  padding: 5px;
+  mix-blend-mode: difference;
+
+}
+
+.nav li a {
+  color: #000;
+  font-size: 1rem;
+  text-decoration: none;
+  float: right;
+
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+/*section 1: intro*/
+#section1 {
+  color: #f3f3f3;
+  z-index:1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.introtext p {
+  color: #f3f3f3;
+  z-index: 1;
+  font-size: 1.1rem;
+}
+span.logointro{
+  display:inline-block;
+  font-weight:lighter;
+  text-decoration: underline;
+}
+.leftIntro {
+padding-top: 2%;
+
+}
+
+
+
+.container1{
+  padding-top: 40vh;
+  position:absolute;
+}
+
+.container1 p{
+  position: absolute;
+  top: 75vh;
+  left: 60%;
+  font-size: 0.9rem;
+  text-align: left;
+  letter-spacing: 0.05rem;
+  font-weight:normal;
+  padding-right: 3%;
+}
+
+.logo1{
+  font-family: 'Monda', sans-serif;
+  position: absolute;
+  top: 32vh;
+  width:100%;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+
+
+}
+
+#messenger {
+  position: absolute;
+  top: 42vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1;
+  white-space: nowrap;
+  text-shadow: 0 2px 2px rgba(#000, 0.9);
+}
+
+
+#videoBG{
+  z-index:-1;
+  width:100%;
+  height:80%;
+}
+@media (min aspect ratio 16/9) and (max-width: 600px) and (min-width: 320px){
+  #videoBG{
+    width:100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  #videoBG{
+    width: auto;
+    height:90%;
+  }
+}
+
+@media (max-width: 767px){
+  #videoBG{
+    height: 100vh;
+  }
+}
+    /*section two*/
+
+    #section2{
+      padding: 5% 10% 0% 10%;
+    }
+
+    .content2{
+
+
+    }
+    .content2 p{
+      color:#808080;
+      line-height: 1.5;
+      font-size: 0.9rem;
+
+    }
+
+
+.sidebar {
+  position: fixed;
+  position: -webkit-sticky;
+  top:100px;
+  left:-60px;
+  margin-right:800px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  z-index:-1;
+  opacity: 0.8;
+
+}
+
+
+
+.sidebar p{
+  font-size:0.7rem;
+  animation: beat 1.2s infinite alternate;
+	transform-origin: center;
+}
+
+@keyframes beat {
+	to { transform: scale(0.9);
+
+  }
+}
+
+
+
+/*section 3*/
+
+
+#section3{
+  padding: 0% 10% 0% 10%;
+
+}
+
+.content3left {
+  padding:0 20% 0 20%;
+
+}
+
+
+
+.image3 {
+  max-width: 100%;
+  max-height: auto;
+
+
+}
+
+
+
+/*section 4*/
+
+#section4{
+  padding: 2% 10% 0% 10%;
+
+}
+.content4left{
+}
+.content4left h4{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  color: #ffcc00;
+  font-size: 6rem;
+  text-align: justify;
+
+}
+
+
+
+
+
+/*section 5*/
+#section5{
+  padding: 5% 10% 0% 10%;
+
+}
+
+#section5 h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 5rem;
+  text-align: left;
+  color:#808080;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #808080;
+  -webkit-text-fill-color: transparent;
+
+
+
+}
+.content4sub p{
+  color:#808080;
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+}
+.content5 p {
+  font-size: 1.rem;
+
+}
+.image2{
+  max-width: 70%;
+  max-height: auto;
+  position: inherit;
+  left: 10%;
+}
+
+#section6{
+  padding: 5% 10% 0% 10%;
+}
+
+.photorow{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.imageshome:hover{
+  transform: scale(1.01);
+
+}
+
+/* Create two equal columns that sits next to each other */
+.photocolumn {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+
+
+}
+
+
+.photocolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photorow{
+  cursor: url('../images/mcursor.png'), auto;
+
+}
+
+.photorow a:link{
+  cursor: url('../images/cursorpoint.png'), auto;
+
+}
+
+.photorow:hover{
+  cursor: url('../images/mcursor.png'), auto;
+
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .photocolumn {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .photocolumn {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+#clients {
+  padding: 5% 10% 10% 10%;
+  text-align: center;
+
+}
+
+.clientshead p{
+  padding: 5%;
+  font-size: 0.9rem;
+  text-align: center;
+
+}
+.clientslogo {
+  max-width: 75%;
+
+}
+
+
+/* footer section */
+
+#footer {
+  background-color: black;
+  padding: 5%;
+  padding: 5% 5% 10% 10%;
+}
+
+#footer p{
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-size: 1.8rem;
+  line-height: 1.2;
+
+}
+
+.office p{
+  font-size: 1rem;
+}
+
+.office ul{
+   list-style-type: none;
+}
+
+.office li {
+ color:white;
+ list-style: none;
+}
+
+/*singlepages*/
+#project{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.projectInfo {
+  padding: 2% ;
+  white-space:normal;
+}
+
+.projectInfo p {
+  font-size: 0.7rem;
+  text-align:inherit;
+  line-height: 1.5;
+
+}
+
+.projectContent{
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.imageslider{
+  padding-top:5%;
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+
+  #project{
+    overflow-x: hidden;
+    max-width: auto;
+  }
+
+  .projectInfo {
+    padding: 20px;
+  }
+
+.imageslider {
+  padding:2%;
+  width: auto;
+  height: auto;
+  white-space: normal;
+  max-width: 100%;
+overflow-x: hidden;
+}
+
+.projectImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  max-width: 100%;
+  height:auto;
+}
+}
+
+.return{
+  position: fixed;
+  display:inline-block;
+  top:90vh;
+  left:50%;
+
+}
+
+
+.office ul{
+  float:right;
+  padding-left:0;
+}
+
+
+.footnav {
+  float: right;
+  padding-left: 0;
+
+}
+
+.footnav li {
+  padding: 5px;
+  mix-blend-mode: difference;
+
+}
+
+.footnav li a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+
+
+}
+
+
+/*Media Queries*/
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding: 5% 0 0 0;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .cursor {
+    display:none;
+  }
+  #section1{
+
+  }
+
+  .container1 p{
+    position: absolute;
+    left:5%;
+    padding-left:5%;
+    padding-right: 5%;
+    text-align: left;
+    font-size: 0.8rem;
+    text-align: inherit;
+    letter-spacing: 0.05rem;
+    font-weight:normal;
+  }
+
+  .logo1{
+    font-family: 'Monda', sans-serif;
+    position: absolute;
+    top: 30vh;
+    width:100%;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+
+
+  }
+
+.sidebar{
+  display:none;
+}
+
+
+  #messenger{
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    left:54%;
+  }
+
+  #section2{
+    padding: 5% 5% 0% 5%;
+
+  }
+  .content2{
+    padding:0 3%;
+
+  }
+  .content2 p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    letter-spacing: inherit;
+
+  }
+
+  #section3{
+
+  }
+
+  .content3left{
+    padding-top: 10%;
+  }
+  .content3left p{
+    font-size: 9rem;
+    line-height: inherit;
+
+  }
+
+  .image3 {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+
+
+#section4{
+
+
+}
+
+
+.content4left h4{
+  font-family: 'Roboto', sans-serif;
+  color: #ffcc00;
+  font-size: 2em;
+  text-align: left;
+  text-align: justify;
+}
+
+.conten4sub{
+  font-size: 0.8rem;
+}
+
+
+
+
+.servcesImage{
+  max-width: 100%;
+  max-height: auto;
+}
+
+
+
+#section5 h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  -webkit-text-stroke-width: 0.5px;
+
+}
+
+.content4sub p{
+  font-size: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: inherit;
+
+}
+
+
+
+.services {
+  padding: 2% 5%;
+  height: 100vh;
+}
+
+.services h4 {
+  position: relative;
+  color: #FFEF32;
+  font-size: 3.5rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+
+
+.services li {
+  padding: 2% 15%;
+  font-family: 'Monda', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #696969	;
+  text-align: left;
+}
+
+.serviceA {
+  margin-top: 50px;
+  padding-left: 80px;
+}
+
+.serviceB {
+  margin-top: 20vh;
+}
+
+a {
+  display: block;
+  color: lighten(skyblue, 15%);
+  text-decoration: underline;
+  margin: 1em auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+i {
+  color: white;
+}
+
+#clients {
+  padding: 10% 10% 10% 10%;
+
+}
+
+.clientslogo {
+  max-width: 60%;
+}
+
+#footer{
+  font-family: 'Roboto', sans-serif;
+  padding: 5%;
+}
+#footer p{
+  padding-top: 10vh;
+  font-size:1.2rem;
+
+}
+
+.office ul{
+  float: left;
+  padding-left:0;
+}
+
+.footnav {
+  float: left;
+}
+
+.footnav li {
+  display: inline-block;
+
+}
+
+
+
+.contact{
+  text-align: center;
+}

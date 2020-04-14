@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QWRT</title>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i&display=swap" rel="stylesheet">
+
+
+
+  <!-- Bootsrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- AOS Stylesheet -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+
+
+</head>
+
+<body>
+  <div class="cursor"></div>
+
+  <header id="header">
+    <ul class="nav">
+      <li><a href="#section4">services </a></li>
+      <li><a href="#section6">work</a></li>
+      <li><a href="#footer">contact</a></li>
+    </ul>
+
+    <section id="project">
+      <div class="row">
+        <div class="projectInfo col-lg-3 col-md-3 col-sm-12">
+          <h5>Portraits</h5>
+          <hr />
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+            of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.  </p>
+          <br />
+          <h6>Date:<span><p>Ongoing</p></span></h6>
+          <h6>Non-commissioned</h6>
+          <br />
+          <br />
+
+
+        </div>
+        <div class="projectContent col-lg-9 col-md-9 col-sm-12">
+          <div class="imageslider">
+            <img class="projectImage" src="images/imagegallery/portrait-1.jpg" width="400px" height="500px">
+            <img class="projectImage" src="images/imagegallery/portfolio-4.jpg" width="339px" height="500px">
+            <img class="projectImage" src="images/imagegallery/nbkarim-1.jpg" width="365px" height="500px">
+            <img width="500px" height="500px">
+            <img width="500px" height="500px">
+          </div>
+
+
+        </div>
+        <div class="return">
+          <a href="index.html">
+          <p>
+            Return to Home
+          </p>
+          </a>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+  </header>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" integrity="sha256-cyEXrJKjO3YNkpCjPxVBdi7pRJ3EF+okm1oN9Qc4rRY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js" integrity="sha256-IvGOVWaoiUZgcG8popkAab0u31x9Nd6Do023q3fvkzo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/CSSRulePlugin.min.js" integrity="sha256-OGsgm5y7cRWEepoRRBI/w4BKpK8zpJ7SqbLy9lIMhlg=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script type=text/javascript src="index.js"></script>
+
+  <script>
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    })
+
+
+
+
+    document.addEventListener('click', () => {
+      cursor.classList.add("expand");
+      setTimeout(() => {
+        cursor.classList.remove("expand");
+      }, 500)
+    })
+  </script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      delay: 200,
+      once: true,
+      disable: 'mobile',
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
