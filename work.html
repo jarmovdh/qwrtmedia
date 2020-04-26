@@ -3,36 +3,187 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QWRT</title>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+
   <!--Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i&display=swap" rel="stylesheet">
+
+
+
+  <!-- Bootsrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- AOS Stylesheet -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+
 
 </head>
 
-<body>
-  <header>
-    <a href="index.html"><img class="logo" src="Images/logo.jpg" alt="logo"/>
-    <div class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
+<body data-barba="wrapper" onload="startTime()">
+
+  <div class="cursor"></div>
+<div class="load-container">
+<div class="loading-screen">
+
+</div>
+</div>
+
+
+
+<main data-barba="containter" data-barba-namespace="home-section">
+
+
+  <header id="header">
+    <div class="row">
+      <div class="container1a col-lg-6 col-md-6 col-sm-12">
+        <span class="logo1">
+        <a href="index.html">たてすか </a>
+        </span>
+        <br />
+        <div class="messengerholder">
+          <span id="messenger"></span>
+        </div>
+        <div id="clock"></div>
+      </div>
+    <div class="container1b col-lg-6 col-md-6 col-sm-12">
+      <ul class="newnav">
+        <li><a href="services.html">services </a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+  </header>
+
+
+  <section id="section1">
+    <div class="row">
+      <div class="container1a col-lg-6 col-md-6 col-sm-12">
+
+      </div>
+      <div class="container1b col-lg-6 col-md-6 col-sm-12">
+
+        <div class="introtext">
+          <p>
+            SEO Strategy, Social Media Strategy, Web Design, Mobile Design, E-commerce, Web Development, Social Media Campaigns, SEO, E-Mail Marketing, Social Media Marketing, Photography (film & digital), Product Photography, Copywriting (SEO, Web), Social Media Content.
+</p>
+        </div>
+      </div>
+
+
+
+  </section>
+
+
+
+
+    <div class="sidebarright">
+      <p>
+        たてすか
+      </p>
+    </div>
+
+
+
+<section id="section6">
+  <div class="photorow">
+    <div class="photocolumn">
+      <a href="portraits.html">
+        <img src="images/imagegallery/carhartt_elmwood.jpg" class="imageshome" style="width:100%">
+      </a>
+      <img src="images/imagegallery/carhartt_nb-1.jpg" class="imageshome" style="width:100%">
+      <a href="portraits.html">
+        <img src="images/imagegallery/iceland-2.jpg" class="imageshome" style="width:100%">
+      </a>
+      <img src="images/imagegallery/bruiloft-2.jpg" class="imageshome" style="width:100%">
+
+      <!-- <img src="images/imagegallery/stussy-2.jpg" style="width:100%;padding:0 10%;"> -->
+    </div>
+    <div class="photocolumn">
+      <img src="images/imagegallery/carhartt_nb-2.jpg" class="imageshome" style="width:100%">
+      <img src="images/imagegallery/nbkarim-1.jpg" class="imageshome" style="width:100%">
+
+      <img src="images/imagegallery/camaro-1.jpg" class="imageshome" style="width:100%">
+      <a href="portraits.html">
+        <img src="images/imagegallery/portrait-1.jpg" class="imageshome" style="width:100%">
+      </a>
+    </div>
+  </div>
+
+
+</section>
+
+
+<footer id="footer">
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="row">
+      <ul class="footnav">
+        <li><a href="https://www.linkedin.com/in/jarmo-van-der-heul-77b824106/" target="_blank">Linkedin</a></li>
+        <li><a href="https://www.instagram.com/qv_official/" target="_blank">Instagram</a></li>
+        <li><a href="https://open.spotify.com/user/pqqv?si=wWTp9CwSTRaVU3APdMiHaw" target="_blank">Spotify</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-  </header>
-  <div class="intro">
-    <section>
-      <p>Hier moet een basic introductie komen, korte informatie over wat je doet.
-        Bijvoorbeeld: web design, photography eCommerce.
-      </p>
-    </section>
   </div>
+</div>
+</footer>
+</main>
 
-<footer>
-  <p>Designed by Jarmo van der Heul</p>
-  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" integrity="sha256-cyEXrJKjO3YNkpCjPxVBdi7pRJ3EF+okm1oN9Qc4rRY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js" integrity="sha256-IvGOVWaoiUZgcG8popkAab0u31x9Nd6Do023q3fvkzo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/CSSRulePlugin.min.js" integrity="sha256-OGsgm5y7cRWEepoRRBI/w4BKpK8zpJ7SqbLy9lIMhlg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script type=text/javascript src="index.js"></script>
+
+  <script>
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    })
+
+
+
+
+    document.addEventListener('click', () => {
+      cursor.classList.add("expand");
+      setTimeout(() => {
+        cursor.classList.remove("expand");
+      }, 500)
+    })
+  </script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      delay: 200,
+      once: true,
+    });
+  </script>
+
+
+
+
+
 </body>
 
 </html>

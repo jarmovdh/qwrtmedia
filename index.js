@@ -1,3 +1,87 @@
+//barba js//
+function delay(n) {
+  n = n || 2000;
+  return new Promise ((done)) => {
+    setTimeout(()) => {
+      done();
+    }, n);
+  });
+}
+
+function pateTransition(){
+  var tl = gsap.timeline();
+  tl.to(".loading-screen", {
+    duration: 1.2,
+    width: "100%",
+    left: "0%",
+    ease: "Expo.easeInOut"
+  });
+}
+
+tl.to(".loading-screen", {
+  duration: 1,
+  width: "100%",
+  left: "100%",
+  ease: "Expo.easeInOut",
+  delay: 0.3,
+});
+tl.set(".loading-screen", {left: "-100%"});
+
+function contentAnimation(){
+  var tl = gsap.timeline();
+tl.from("animate-this", {duration:1, y: 30, opacity: 0, stagger: 0,4, dealy 0.2
+});
+}
+
+$(function) {
+  barba.intit({
+    sync: true,
+
+    transitions: [
+    {
+      async leave(data){
+        const done = this.async();
+
+        pageTransition();
+        await delay(1000);
+        done();
+      },
+
+      async enter(data) {
+        contentAnimation();
+      },
+      async once(data){
+        contentAnimation();
+      },
+    },
+  ],
+});
+});
+
+Barba.Pjax.getTransition = function() {
+     return transEffect;
+   }
+   Barba.Pjax.start();
+});
+
+
+
+//clock
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('clock').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
 
 
 var TxtType = function(el, toRotate, period) {
@@ -73,10 +157,11 @@ var Messenger = function(el) {
     m.messages = [
       'PHOTOGRAPHY',
       'COPYWRITING',
-      'WEBDESIGN'
+      'WEBDESIGN',
+      'AMSTERDAM'
     ];
 
-    setTimeout(m.animateIn, 100);
+    setTimeout(m.animateIn, 0);
   };
 
   m.generateRandomString = function(length) {
@@ -98,9 +183,9 @@ var Messenger = function(el) {
       var message = m.generateRandomString(m.current_length);
       $(el).html(message);
 
-      setTimeout(m.animateIn, 20);
+      setTimeout(m.animateIn, 0);
     } else {
-      setTimeout(m.animateFadeBuffer, 20);
+      setTimeout(m.animateFadeBuffer, 0);
     }
   };
 
@@ -109,7 +194,7 @@ var Messenger = function(el) {
       m.fadeBuffer = [];
       for (var i = 0; i < m.messages[m.message].length; i++) {
         m.fadeBuffer.push({
-          c: (Math.floor(Math.random() * 12)) + 1,
+          c: (Math.floor(Math.random() * 13)) + 1,
           l: m.messages[m.message].charAt(i)
         });
       }
@@ -134,7 +219,7 @@ var Messenger = function(el) {
     if (do_cycles === true) {
       setTimeout(m.animateFadeBuffer, 50);
     } else {
-      setTimeout(m.cycleText, 2000);
+      setTimeout(m.cycleText, 4000);
     }
   };
 
@@ -148,7 +233,7 @@ var Messenger = function(el) {
     m.fadeBuffer = false;
     $(el).html('');
 
-    setTimeout(m.animateIn, 200);
+    setTimeout(m.animateIn, 0);
   };
 
   m.init();
@@ -240,70 +325,3 @@ vid.load();
 
 
 //carousel
-
-
-// //barba js//
-// function delay(n) {
-//   n = n || 2000;
-//   return new Promise ((done)) => {
-//     setTimeout(()) => {
-//       done();
-//     }, n);
-//   });
-// }
-//
-// function pateTransition(){
-//   var tl = gsap.timeline();
-//   tl.to(".loading-screen", {
-//     duration: 1.2,
-//     width: "100%",
-//     left: "0%",
-//     ease: "Expo.easeInOut"
-//   });
-// }
-//
-// tl.to(".loading-screen", {
-//   duration: 1,
-//   width: "100%",
-//   left: "100%",
-//   ease: "Expo.easeInOut",
-//   delay: 0.3,
-// });
-// tl.set(".loading-screen", {left: "-100%"});
-//
-// function contentAnimation(){
-//   var tl = gsap.timeline();
-// tl.from("animate-this", {duration:1, y: 30, opacity: 0, stagger: 0,4, dealy 0.2
-// });
-// }
-//
-// $(function) {
-//   barba.intit({
-//     sync: true,
-//
-//     transitions: [
-//     {
-//       async leave(data){
-//         const done = this.async();
-//
-//         pageTransition();
-//         await delay(1000);
-//         done();
-//       },
-//
-//       async enter(data) {
-//         contentAnimation();
-//       },
-//       async once(data){
-//         contentAnimation();
-//       },
-//     },
-//   ],
-// });
-// });
-//
-// Barba.Pjax.getTransition = function() {
-//      return transEffect;
-//    }
-//    Barba.Pjax.start();
-// });
