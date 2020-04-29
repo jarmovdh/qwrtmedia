@@ -40,7 +40,7 @@ h4 {
 p {
   font-family: 'Monda', sans-serif;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 13px;
   line-height: 1.5;
   color: black;
 }
@@ -160,7 +160,7 @@ float: right;
 .introtext p {
   color: black;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 15px;
 }
 span.logointro{
   display:inline-block;
@@ -172,6 +172,9 @@ padding-top: 2%;
 
 }
 
+.rowhead{
+  float:right;
+}
 .newnav {
   font-family: 'Roboto'
   padding: 5px;
@@ -184,7 +187,25 @@ padding-top: 2%;
 .newnav li{
     display: inline;
     text-align: left;
-    padding: 0 15px;
+    font-size: 2rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+
+}
+
+.newnav {
+  font-family: 'Roboto'
+  padding: 5px;
+  font-size: 1.5rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
+}
+
+.newnav li{
+    display: inline;
+    text-align: left;
     font-size: 2rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -212,9 +233,10 @@ padding-top: 2%;
 
 
 
+
 .logo1{
   font-family: 'Monda', sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 1.8rem;
   font-weight: bold;
   -webkit-text-stroke-width: 1px;
@@ -264,6 +286,37 @@ padding-top: 2%;
 
 .messengerholder {
   height: 48px;
+}
+
+.arrow{
+  color:black;
+  font-weight:lighter;
+}
+
+.arrowup{
+  color:darkgrey;
+  font-weight:lighter;
+  text-align:right;
+  float: right;
+
+}
+
+/* Progress bar */
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: darkgrey;
+  width: 0%;
+
 }
 
     /*section two*/
@@ -339,6 +392,28 @@ padding-top: 2%;
 
   }
 } */
+
+/* Services */
+
+.services1a {
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+.services1b {
+  padding-top: 20px;
+}
+
+.servicetext {
+
+}
+.servicetext p {
+  color: black;
+  text-align: justify;
+  font-size: 15px;
+}
+
+
 
 
 
@@ -424,7 +499,6 @@ padding-top: 2%;
 }
 
 #section6{
-  margin-top: -200px;
   padding: 5% 10% 0% 10%;
   margin-bottom: 50px;
 }
@@ -644,13 +718,14 @@ overflow-x: hidden;
 }
 
 .footnav li {
+  font-size:8px;
   display: inline;
   padding: 5px;
-  mix-blend-mode: difference;
 
 }
 
 .footnav li a {
+  font-size:8px;
   color: black;
   font-size: 1rem;
   text-decoration: none;
@@ -662,7 +737,7 @@ overflow-x: hidden;
 /*Media Queries*/
 @media only screen and (max-width: 812px) and (min-width: 320px) {
   p {
-    font-size: 0.8rem;
+    font-size: 12px;
     line-height: 1.5;
     padding: 5% 0 0 0;
   }
@@ -675,6 +750,10 @@ overflow-x: hidden;
     font-size: 1.5rem;
   }
 
+  a {
+    margin:0;
+    text-decoration: none;
+  }
   .nav {
     display: none;
   }
@@ -683,12 +762,11 @@ overflow-x: hidden;
     display:none;
   }
   #section1{
-    height: auto;
   }
 
   .container1 p{
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 12px;
     text-align: inherit;
     letter-spacing: 0.05rem;
     font-weight:normal;
@@ -696,15 +774,37 @@ overflow-x: hidden;
 
   .logo1{
     font-family: 'Monda', sans-serif;
-    width:100%;
-    text-align: center;
-    font-size: 1.7rem;
+    text-align: left;
+    font-size: 3rem;
     font-weight: bold;
+    margin-bottom:0;
+    text-decoration: none;
+
 
 
   }
 
+  .logo1 a{
+    font-family: 'Monda', sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom:0;
+    text-decoration: none;
+
+
+
+  }
+  .rowhead{
+    position: absolute;
+    top:10px;
+    right: 50px;
+    float:right;
+  }
+
   .newnav {
+    padding: 0;
+    display: block;
     font-family: 'Roboto'
     padding: 5px;
     font-size: 1.5rem;
@@ -714,7 +814,8 @@ overflow-x: hidden;
   }
 
   .newnav li a {
-      display: inline;
+      padding:0;
+      display: block;
       font-size: 1.6rem;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: black;
@@ -722,7 +823,7 @@ overflow-x: hidden;
 
   }
 
-.sidebar{
+.sidebarright{
   display:none;
 }
 
@@ -731,16 +832,39 @@ overflow-x: hidden;
     transform: translate(-50%, -50%);
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-align: center;
     white-space: nowrap;
     text-shadow: 0 2px 2px rgba(#000, 0.9);
     left:54%;
   }
 
-  #section2{
-    padding: 5% 5% 0% 5%;
+  #clock{
+    padding-top: 0;
+    font-size: 2rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+  }
 
+.introtext p{
+  font-size: 12px;
+}
+/* services */
+
+.services1b {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.servicetext p {
+  color: black;
+  text-align: justify;
+  font-size: 12px;
+}
+
+  #section2{
+      padding: 0% 10% 0% 10%;
   }
   .content2{
     padding:0 3%;
@@ -816,7 +940,6 @@ overflow-x: hidden;
 
 }
 #section6{
-  margin-top: 50px;
   padding: 5% 10% 0% 10%;
   margin-bottom: 50px;
 }
@@ -882,9 +1005,23 @@ i {
 #footer{
   font-family: 'Roboto', sans-serif;
   padding: 5%;
+  font-size: 8px;
 }
 #footer p{
-  font-size:1.2rem;
+  font-size:8px;
+
+}
+
+#footer li a{
+  font-family: 'Monda', sans-serif;
+  text-align: left;
+  font-size: 9px;
+  line-height: 1.5;
+  color:darkgrey;
+  -webkit-text-stroke-width: none;
+  -webkit-text-stroke-color: none;
+  -webkit-text-fill-color: none;
+  text-decoration: none;
 
 }
 
@@ -948,17 +1085,7 @@ Medium devices (tablets, 768px and up)
     font-weight:normal;
   }
 
-  .logo1{
-    font-family: 'Monda', sans-serif;
-    position: absolute;
-    top: 30vh;
-    width:100%;
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: bold;
 
-
-  }
 
 .sidebar{
   display:none;

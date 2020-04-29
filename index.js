@@ -1,68 +1,3 @@
-//barba js//
-function delay(n) {
-  n = n || 2000;
-  return new Promise ((done)) => {
-    setTimeout(()) => {
-      done();
-    }, n);
-  });
-}
-
-function pateTransition(){
-  var tl = gsap.timeline();
-  tl.to(".loading-screen", {
-    duration: 1.2,
-    width: "100%",
-    left: "0%",
-    ease: "Expo.easeInOut"
-  });
-}
-
-tl.to(".loading-screen", {
-  duration: 1,
-  width: "100%",
-  left: "100%",
-  ease: "Expo.easeInOut",
-  delay: 0.3,
-});
-tl.set(".loading-screen", {left: "-100%"});
-
-function contentAnimation(){
-  var tl = gsap.timeline();
-tl.from("animate-this", {duration:1, y: 30, opacity: 0, stagger: 0,4, dealy 0.2
-});
-}
-
-$(function) {
-  barba.intit({
-    sync: true,
-
-    transitions: [
-    {
-      async leave(data){
-        const done = this.async();
-
-        pageTransition();
-        await delay(1000);
-        done();
-      },
-
-      async enter(data) {
-        contentAnimation();
-      },
-      async once(data){
-        contentAnimation();
-      },
-    },
-  ],
-});
-});
-
-Barba.Pjax.getTransition = function() {
-     return transEffect;
-   }
-   Barba.Pjax.start();
-});
 
 
 
@@ -127,21 +62,7 @@ TxtType.prototype.tick = function() {
   }, delta);
 };
 
-//toggleservices
-$('#test_content').hide();
-$('#details').on('click', function(){
-  $('#test_content').slideToggle(800);
-});
 
-$('#test_content2').hide();
-$('#details2').on('click', function(){
-  $('#test_content2').slideToggle(800);
-});
-
-$('#test_content3').hide();
-$('#details3').on('click', function(){
-  $('#test_content3').slideToggle(800);
-});
 
 //messenger
 
@@ -260,13 +181,15 @@ tl.from(".nav", {
   delay: 2,
   ease: Back.easeOut.config(1.7),
 });
-tl.from(".sidebar", {
+tl.to(".arrow", {
   duration: 4,
   y: -20,
   opacity: 0,
   delay: 1,
-  ease: Back.easeOut.config(1.5),
+  ease: Back.easeOut.config(0.5),
 });
+
+
 
 
 
@@ -286,42 +209,7 @@ var scene = new ScrollMagic.Scene({
   .addTo(controller)
   .reverse(false);
 
-//new section gsap//
-
-$(".section3").each(function() {
-
-  var contentTweenTL = new TimelineMax({
-    repeat: 0,
-  });
-
-  var contentTween = contentTweenTL.from($(this).find(".content3left"), .6, {
-      x: -40,
-      autoAlpha: 0,
-      delay: 0,
-      ease: Power2.easeOut
-    }, .1)
-
-    .from($(this).find(".content3right"), .6, {
-      y: 40,
-      autoAlpha: 0,
-      delay: 0,
-      ease: Power2.easeOut
-    }, .1);
-
-  var scene3 = new ScrollMagic.Scene({
-      triggerElement: this,
-      offset: 20,
-      reverse: false
-    })
-    .setTween(contentTween)
-    .addTo(controller)
-    .addIndicators();
-});
-
-
-var vid = document.getElementById(".video");
-vid.autoplay = true;
-vid.load();
 
 
 //carousel
+// When the user scrolls the page, execute myFunction
