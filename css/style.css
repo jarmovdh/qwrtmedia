@@ -234,9 +234,7 @@ padding-top: 2%;
   left:85%;
   top: 50px;
   float: right;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
+  color: black;
 }
 
 /* The Overlay (background) */
@@ -305,9 +303,7 @@ padding-top: 2%;
   text-align: left;
   font-size: 1.8rem;
   font-weight: bold;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
+  color: black;
 
 }
 
@@ -332,7 +328,8 @@ padding-top: 2%;
 
 
 #clock{
-  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   -webkit-text-fill-color: white;
@@ -381,6 +378,7 @@ padding-top: 2%;
 .progress-bar {
   height: 8px;
   background: darkgrey;
+
   width: 0%;
 
 }
@@ -438,8 +436,9 @@ padding-top: 2%;
   padding: 5px;
   font-size: 1.8rem;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: #10375c;
+
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -510,21 +509,29 @@ padding-top: 2%;
 /*section 4*/
 
 #section4{
-  padding: 2% 10% 0% 10%;
+  padding: 2% 10%;
 
 }
 .content4left{
+  padding: 0;
 }
 .content4left h4{
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
   color: #ffcc00;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: justify;
 
 }
 
+.contacttext h4{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  color: #ffcc00;
+  font-size: 3rem;
+  text-align: justify;
 
+}
 
 
 
@@ -565,7 +572,7 @@ padding-top: 2%;
 }
 
 #section6{
-  padding: 5% 10% 0% 10%;
+  padding: 2% 8%;
   margin-bottom: 50px;
 }
 
@@ -851,16 +858,17 @@ overflow-x: hidden;
   }
 
   .logo1 a{
-    font-family: 'Monda', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: left;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom:0;
     text-decoration: none;
 
-
-
   }
+
+
+
   .rowhead{
     position: absolute;
     top:10px;
@@ -915,11 +923,9 @@ overflow-x: hidden;
   }
 
   #clock{
-    padding-top: 0;
-    font-size: 2rem;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-fill-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: white;
   }
 
 .introtext p{
@@ -990,6 +996,14 @@ overflow-x: hidden;
   font-size: 0.8rem;
 }
 
+.contacttext h4{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  color: #ffcc00;
+  font-size: 2rem;
+  text-align: justify;
+
+}
 
 
 
