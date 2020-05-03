@@ -179,13 +179,7 @@ var messenger = new Messenger($('#messenger'));
 var controller = new ScrollMagic.Controller();
 var tl = new TimelineMax();
 
-tl.from(".nav", {
-  duration: 4,
-  y: -20,
-  opacity: 0,
-  delay: 2,
-  ease: Back.easeOut.config(1.7),
-});
+
 tl.to(".arrow", {
   duration: 4,
   y: -20,
@@ -197,24 +191,57 @@ tl.to(".arrow", {
 
 
 
-
 var scene = new ScrollMagic.Scene({
     triggerElement: ".container2",
-    triggerHook: 0.9,
-    duration: "80%"
+    triggerHook: 1.4,
+    duration: "90%"
   })
 
   .addIndicators({
-    colorTrigger: "purple",
-    colorStart: "purple",
-    colorEnd: "purple",
-    indent: 5
+    colorTrigger: "blue",
+    colorStart: "blue",
+    colorEnd: "blue",
+    indent: 10
   })
   .setTween(tl)
   .addTo(controller)
-  .reverse(false);
+  .reverse(true);
+
+// new trigger animation
+
+  var controller2 = new ScrollMagic.Controller();
+  var tl2 = new TimelineMax();
 
 
+  tl.from(".services1a", {
+    duration: 2,
+    y: -20,
+    opacity: 0,
+    delay: 2,
+    ease: Sine.easeIn(2),
+  });
 
-//carousel
-// When the user scrolls the page, execute myFunction
+  tl.from(".services1b", {
+  duration: 2,
+  y: -20,
+  opacity: 0,
+  delay: 2,
+  ease: Sine.easeIn(2),
+});
+
+
+  var scene = new ScrollMagic.Scene({
+      triggerElement: "photorow",
+      triggerHook: 10,
+      duration: "20%"
+    })
+
+    .addIndicators({
+      colorTrigger: "red",
+      colorStart: "red",
+      colorEnd: "red",
+      indent: 15
+    })
+    .setTween(tl2)
+    .addTo(controller2)
+    .reverse(false);

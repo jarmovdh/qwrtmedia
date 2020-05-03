@@ -41,7 +41,7 @@ p {
   font-family: 'Monda', sans-serif;
   text-align: left;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 2;
   color: black;
 }
 
@@ -524,10 +524,20 @@ padding-top: 2%;
 
 }
 
+#contact{
+  padding: 2% 8%;
+}
+
+#contact a{
+    color: #ffcc00;
+    text-decoration: underline;
+    background-color: transparent;
+
+}
 .contacttext h4{
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
-  color: #ffcc00;
+  color:darkgrey;
   font-size: 3rem;
   text-align: justify;
 
@@ -999,7 +1009,7 @@ overflow-x: hidden;
 .contacttext h4{
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
-  color: #ffcc00;
+  color: darkgrey;
   font-size: 2rem;
   text-align: justify;
 
