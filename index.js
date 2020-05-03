@@ -207,39 +207,39 @@ var scene = new ScrollMagic.Scene({
   .addTo(controller)
   .reverse(false);
 
-// new trigger animation
-
-  var controller2 = new ScrollMagic.Controller();
-  var tl2 = new TimelineMax();
-
-
-//   tl.from(".services1a", {
-//     duration: 2,
-//     y: -20,
-//     opacity: 0,
-//     delay: 2,
-//   });
+// // new trigger animation
 //
-//   tl.from(".services1b", {
-//   duration: 2,
-//   y: -20,
-//   opacity: 0,
-//   delay: 2,
-// });
-
-
-  var scene = new ScrollMagic.Scene({
-      triggerElement: "photorow",
-      triggerHook: 0.9,
-      duration: "20%"
-    })
-
-    .addIndicators({
-      colorTrigger: "red",
-      colorStart: "red",
-      colorEnd: "red",
-      indent: 15
-    })
-    .setTween(tl2)
-    .addTo(controller2)
-    .reverse(false);
+//   var controller2 = new ScrollMagic.Controller();
+//   var tl2 = new TimelineMax();
+//
+//
+// //   tl.from(".services1a", {
+// //     duration: 2,
+// //     y: -20,
+// //     opacity: 0,
+// //     delay: 2,
+// //   });
+// //
+// //   tl.from(".services1b", {
+// //   duration: 2,
+// //   y: -20,
+// //   opacity: 0,
+// //   delay: 2,
+// // });
+//
+//
+//   var scene = new ScrollMagic.Scene({
+//       triggerElement: "photorow",
+//       triggerHook: 0.9,
+//       duration: "20%"
+//     })
+//
+//     .addIndicators({
+//       colorTrigger: "red",
+//       colorStart: "red",
+//       colorEnd: "red",
+//       indent: 15
+//     })
+//     .setTween(tl2)
+//     .addTo(controller2)
+//     .reverse(false);
