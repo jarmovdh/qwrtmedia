@@ -25,7 +25,7 @@
 
   <!-- AOS Stylesheet -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
 
 
@@ -47,7 +47,7 @@
   <main data-barba="containterbarba" data-barba-namespace="home-section">
 
     <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="myBar"></div>
     </div>
     <header id="header">
       <div class="row">
@@ -63,15 +63,15 @@
 
         </div>
         <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-      </div>
-      </div>
-      <span class="navbutton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <span class="navbutton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </header>
 
 
@@ -107,8 +107,8 @@
           <h4>We create digital experiences for brands through strategy, photography, design and copywriting.</h4>
 
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
     <!-- <div class="sidebarright">
       <p>
@@ -118,7 +118,38 @@
 
     <section id="section3">
       <div class="row">
-        <div class="services1a col-lg-6 col-md-6 col-sm-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
+        <div class="servicehead col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
+          <h3>What we do:</h3>
+        </div>
+        <div class="servicetext col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
+          <p> We built brands from a wide range of sectors, and help them achive their online or offline goals. We create digital experiences for brands and startups through photography, design and copywriting.
+          </p>
+        </div>
+        <div class="servicehead col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
+          <h3>Our Approach:</h3>
+        </div>
+        <div class="servicetext col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
+          <p> We built brands from a wide range of sectors, and help them achive their online or offline goals. From strategy, design to development: We built brands from a wide range of sectors, and help them achive their online or offline goals. From strategy, design to development:
+          </p>
+        </div>
+        <div class="servicehead col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
+          <h3>We can help you with:</h3>
+        </div>
+        <div class="servicetext col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
+          <p> SEO Strategy, Social Media Strategy, Web Design, Mobile Design, E-commerce, Web Development, Social Media Campaigns, SEO, E-Mail Marketing, Social Media Marketing, Photography (film & digital), Product Photography, Copywriting (SEO, Web), Social Media Content.
+          </p>
+        </div>
+        <div class="servicehead col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
+          <h3>Clients:</h3>
+        </div>
+        <div class="servicetext col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
+          <p> adidas, DIV. Amsterdam, Key Content, Reebok
+          </p>
+        </div>
+      </div>
+        <!-- <div class="services1a col-lg-6 col-md-6 col-sm-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
+
+
           <div class="servicetext">
             <p>
               <b>What we do:</b>
@@ -153,7 +184,7 @@
             </p>
 
           </div>
-        </div>
+        </div> -->
 
 
     </section>
@@ -268,15 +299,16 @@
   </script>
 
   <script>
-  window.onscroll = function() {myFunction()};
+    window.onscroll = function() {
+      myFunction()
+    };
 
-  function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-  }
-
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
   </script>
 
 

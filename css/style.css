@@ -23,9 +23,13 @@ h1 {
 }
 
 h3 {
+  font-family: 'Monda', sans-serif;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   color: #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
 
 }
 
@@ -419,7 +423,7 @@ padding-top: 2%;
 /* Section 3 services */
 
 #section3 {
-padding: 0% 10% 0% 10%;
+padding: 0% 10% 10% 10%;
 }
 
 .services1a {
@@ -431,8 +435,11 @@ padding: 0% 10% 0% 10%;
   padding-top: 20px;
 }
 
+.servicehead{
+  padding-left: 0px;
+}
 .servicetext {
-
+padding-bottom:10%;
 }
 .servicetext p {
   color: black;
@@ -687,7 +694,15 @@ overflow-x: hidden;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: 'Monda', sans-serif;
+    text-align: left;
+    color: black;
+    -webkit-text-stroke-width: remove;
+    -webkit-text-stroke-color: remove;
+    -webkit-text-fill-color: remove;
+
   }
 
   h1{
@@ -828,6 +843,10 @@ overflow-x: hidden;
   padding-right:0px;
 }
 
+.servicetext {
+padding-bottom: 2%;
+padding-left:0;
+}
 
 
 
