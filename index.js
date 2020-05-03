@@ -193,7 +193,7 @@ tl.to(".arrow", {
 
 var scene = new ScrollMagic.Scene({
     triggerElement: ".container2",
-    triggerHook: 1.4,
+    triggerHook: 0.8,
     duration: "90%"
   })
 
@@ -205,7 +205,7 @@ var scene = new ScrollMagic.Scene({
   })
   .setTween(tl)
   .addTo(controller)
-  .reverse(true);
+  .reverse(false);
 
 // new trigger animation
 
@@ -213,26 +213,24 @@ var scene = new ScrollMagic.Scene({
   var tl2 = new TimelineMax();
 
 
-  tl.from(".services1a", {
-    duration: 2,
-    y: -20,
-    opacity: 0,
-    delay: 2,
-    ease: Sine.easeIn(2),
-  });
-
-  tl.from(".services1b", {
-  duration: 2,
-  y: -20,
-  opacity: 0,
-  delay: 2,
-  ease: Sine.easeIn(2),
-});
+//   tl.from(".services1a", {
+//     duration: 2,
+//     y: -20,
+//     opacity: 0,
+//     delay: 2,
+//   });
+//
+//   tl.from(".services1b", {
+//   duration: 2,
+//   y: -20,
+//   opacity: 0,
+//   delay: 2,
+// });
 
 
   var scene = new ScrollMagic.Scene({
       triggerElement: "photorow",
-      triggerHook: 10,
+      triggerHook: 0.9,
       duration: "20%"
     })
 

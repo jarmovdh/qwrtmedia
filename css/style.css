@@ -383,42 +383,27 @@ padding-top: 2%;
 
 }
 
-    /*section two*/
+/*section 2 Big Yellow Text*/
 
-    #section2{
-      padding: 5% 10% 0% 10%;
-    }
+#section2{
+  padding: 5% 10%;
 
-    .content2{
-
-
-    }
-    .content2 p{
-      font-family: 'Roboto'
-      padding: 5px;
-      font-size: 1.8rem;
-      text-align: justify;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: black;
-      -webkit-text-fill-color: white;
-
-    }
-
-
-.sidebar {
-  position: fixed;
-  position: -webkit-sticky;
-  top:250px;
-  left:-150px;
-  margin-right:800px;
-  font-weight: bold;
-  transform: rotate(-90deg);
-  z-index:-1;
-  opacity: 0.8;
+}
+.content4left{
+  padding: 0;
+}
+.content4left h4{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  color: #ffcc00;
+  font-size: 4rem;
+  text-align: justify;
 
 }
 
-.sidebarright {
+
+
+/* .sidebarright {
   position: fixed;
   position: -webkit-sticky;
   top:300px;
@@ -429,36 +414,13 @@ padding-top: 2%;
   z-index:-1;
   opacity: 0.8;
 
-}
-
-.sidebarright p{
-  font-family: 'Roboto'
-  padding: 5px;
-  font-size: 1.8rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #10375c;
-
-  -webkit-text-fill-color: transparent;
-}
-
-
-
-.sidebar p{
-  font-family: 'Roboto'
-  padding: 5px;
-  font-size: 1.8rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-}
-
-/* @keyframes beat {
-	to { transform: scale(0.9);
-
-  }
 } */
 
-/* Services */
+/* Section 3 services */
+
+#section3 {
+padding: 0% 10% 0% 10%;
+}
 
 .services1a {
   padding-top: 20px;
@@ -478,110 +440,7 @@ padding-top: 2%;
   font-size: 15px;
 }
 
-
-
-
-
-/*section 3*/
-
-
-#section3{
-  padding: 0% 10% 0% 10%;
-
-}
-
-.content3left {
-  padding:0 20% 0 20%;
-
-}
-
-
-
-.image3 {
-  max-width: 100%;
-  max-height: auto;
-
-
-}
-
-
-
-/*section 4*/
-
 #section4{
-  padding: 2% 10%;
-
-}
-.content4left{
-  padding: 0;
-}
-.content4left h4{
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.2;
-  color: #ffcc00;
-  font-size: 4rem;
-  text-align: justify;
-
-}
-
-#contact{
-  padding: 2% 8%;
-}
-
-#contact a{
-    color: #ffcc00;
-    text-decoration: underline;
-    background-color: transparent;
-
-}
-.contacttext h4{
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.2;
-  color:darkgrey;
-  font-size: 3rem;
-  text-align: justify;
-
-}
-
-
-
-/*section 5*/
-#section5{
-  padding: 5% 10% 0% 10%;
-
-}
-
-#section5 h3{
-  font-family: 'Roboto', sans-serif;
-  font-size: 5rem;
-  text-align: left;
-  color:#808080;
-  text-transform: uppercase;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-
-
-
-}
-.content4sub p{
-  color:#808080;
-  font-size: 0.9rem;
-  line-height: 1.5;
-
-}
-.content5 p {
-  font-size: 1.rem;
-
-}
-.image2{
-  max-width: 70%;
-  max-height: auto;
-  position: inherit;
-  left: 10%;
-}
-
-#section6{
   padding: 2% 8%;
   margin-bottom: 50px;
 }
@@ -649,26 +508,29 @@ padding-top: 2%;
 
 
 
-#clients {
-  padding: 5% 10% 10% 10%;
-  text-align: center;
+
+
+#section5{
+  padding: 2% 8%;
+}
+
+#section5 a{
+    color: #ffcc00;
+    text-decoration: underline;
+    background-color: transparent;
+
+}
+.contacttext h4{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  color:darkgrey;
+  font-size: 3rem;
+  text-align: justify;
 
 }
 
-.clientshead p{
-  font-family: 'Roboto'
-  padding: 5px;
-  font-size: 2rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-  text-align: center;
 
-}
-.clientslogo {
-  max-width: 75%;
 
-}
 
 
 /* footer section */
@@ -822,7 +684,6 @@ overflow-x: hidden;
   p {
     font-size: 12px;
     line-height: 1.5;
-    padding: 5% 0 0 0;
   }
 
   h3 {
@@ -847,6 +708,10 @@ overflow-x: hidden;
   #section1{
   }
 
+  .container1b {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .container1 p{
     text-align: left;
     font-size: 12px;
@@ -886,39 +751,12 @@ overflow-x: hidden;
     float:right;
   }
 
-  .newnav {
-    padding: 0;
-    display: block;
-    font-family: 'Roboto'
-    padding: 5px;
-    font-size: 1.5rem;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-fill-color: white;
-  }
-
-  .newnav li a {
-      padding:0;
-      display: block;
-      font-size: 1.6rem;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: black;
-      -webkit-text-fill-color: white;
-
-  }
-
-.sidebarright{
-  display:none;
-}
 
 .navbutton{
   position: fixed;
   right:50px;
   top: 50px;
   float: right;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
 }
 
   #messenger{
@@ -941,54 +779,13 @@ overflow-x: hidden;
 .introtext p{
   font-size: 12px;
 }
-/* services */
-
-.services1b {
-  padding-top: 0;
-  padding-left: 0;
-}
-
-.servicetext p {
-  color: black;
-  text-align: justify;
-  font-size: 12px;
-}
-
-  #section2{
-      padding: 0% 10% 0% 10%;
-  }
-  .content2{
-    padding:0 3%;
-
-  }
-  .content2 p{
-    font-size: 0.8rem;
-    line-height: 1.5;
-    letter-spacing: inherit;
-
-  }
-
-  #section3{
-
-  }
-
-  .content3left{
-    padding-top: 10%;
-  }
-  .content3left p{
-    font-size: 9rem;
-    line-height: inherit;
-
-  }
-
-  .image3 {
-    max-width: 100%;
-    max-height: auto;
-  }
 
 
 
-#section4{
+
+
+#section2{
+
 
 
 }
@@ -1016,11 +813,20 @@ overflow-x: hidden;
 }
 
 
-
-.servcesImage{
-  max-width: 100%;
-  max-height: auto;
+#section3 p {
+  font-size: 12px;
+  line-height: 1.5;
 }
+
+.services1a {
+  padding-right: 0px;
+}
+.services1b {
+  padding-top:0px;
+  padding-left: 0px;
+  padding-right:0px;
+}
+
 
 
 
@@ -1237,10 +1043,7 @@ Medium devices (tablets, 768px and up)
 
 
 
-#section4{
 
-
-}
 
 
 .content4left h4{
