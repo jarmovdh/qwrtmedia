@@ -186,6 +186,7 @@ tl.to(".arrow", {
   opacity: 0,
   delay: 1,
   ease: Back.easeOut.config(0.5),
+
 });
 
 
@@ -205,7 +206,7 @@ var scene = new ScrollMagic.Scene({
   })
   .setTween(tl)
   .addTo(controller)
-  .reverse(false);
+  .reverse(true);
 
 // // new trigger animation
 //

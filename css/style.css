@@ -333,11 +333,10 @@ padding-top: 2%;
 
 
 #clock{
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  color: darkgrey;
+
 }
 #messenger {
   transform: translate(-50%, -50%);
@@ -451,7 +450,7 @@ padding-bottom:5%;
 }
 
 #section4{
-  padding: 2% 8%;
+  padding: 2% 10%;
   margin-bottom: 50px;
 }
 
@@ -778,7 +777,7 @@ overflow-x: hidden;
 
 
 .navbutton{
-  position: fixed;
+  position: absolute;
   right:50px;
   top: 50px;
   float: right;
@@ -862,9 +861,12 @@ padding-left:0;
 
 #section5 h3{
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: left;
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: remove;
+  -webkit-text-stroke-color: remove;
+  -webkit-text-fill-color: remove;
+
 
 }
 
@@ -944,7 +946,7 @@ i {
 }
 
 .footcontainer{
-  margin-left:5%;
+
 }
 
 #footer p{
