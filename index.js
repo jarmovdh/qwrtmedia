@@ -185,8 +185,6 @@ tl.to(".arrow", {
   y: -20,
   opacity: 0,
   delay: 1,
-  ease: Back.easeOut.config(0.5),
-
 });
 
 
@@ -194,8 +192,8 @@ tl.to(".arrow", {
 
 var scene = new ScrollMagic.Scene({
     triggerElement: ".container2",
-    triggerHook: 0.8,
-    duration: "90%"
+    triggerHook: 1.8,
+    duration: "100%"
   })
 
   .addIndicators({
@@ -207,40 +205,3 @@ var scene = new ScrollMagic.Scene({
   .setTween(tl)
   .addTo(controller)
   .reverse(true);
-
-// // new trigger animation
-//
-//   var controller2 = new ScrollMagic.Controller();
-//   var tl2 = new TimelineMax();
-//
-//
-// //   tl.from(".services1a", {
-// //     duration: 2,
-// //     y: -20,
-// //     opacity: 0,
-// //     delay: 2,
-// //   });
-// //
-// //   tl.from(".services1b", {
-// //   duration: 2,
-// //   y: -20,
-// //   opacity: 0,
-// //   delay: 2,
-// // });
-//
-//
-//   var scene = new ScrollMagic.Scene({
-//       triggerElement: "photorow",
-//       triggerHook: 0.9,
-//       duration: "20%"
-//     })
-//
-//     .addIndicators({
-//       colorTrigger: "red",
-//       colorStart: "red",
-//       colorEnd: "red",
-//       indent: 15
-//     })
-//     .setTween(tl2)
-//     .addTo(controller2)
-//     .reverse(false);
