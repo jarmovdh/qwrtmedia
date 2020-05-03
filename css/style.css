@@ -766,7 +766,9 @@ overflow-x: hidden;
 
   }
 
-
+.logosvg{
+  height: 50%;
+}
 
   .rowhead{
     position: absolute;
