@@ -23,13 +23,14 @@ h1 {
 }
 
 h3 {
-  font-family: 'Monda', sans-serif;
-  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-align: left;
   color: #000;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: transparent;
 
 }
 
@@ -365,6 +366,8 @@ padding-top: 2%;
   font-weight:lighter;
   text-align:right;
   float: right;
+  position: fixed;
+  bottom:0;
 
 }
 
@@ -423,7 +426,7 @@ padding-top: 2%;
 /* Section 3 services */
 
 #section3 {
-padding: 0% 10% 10% 10%;
+padding: 0% 10% 5% 10%;
 }
 
 .services1a {
@@ -439,7 +442,7 @@ padding: 0% 10% 10% 10%;
   padding-left: 0px;
 }
 .servicetext {
-padding-bottom:10%;
+padding-bottom:5%;
 }
 .servicetext p {
   color: black;
@@ -522,7 +525,7 @@ padding-bottom:10%;
 }
 
 #section5 a{
-    color: #ffcc00;
+    color: darkgrey;
     text-decoration: underline;
     background-color: transparent;
 
@@ -531,8 +534,11 @@ padding-bottom:10%;
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
   color:darkgrey;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: justify;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: transparent;
 
 }
 
@@ -544,7 +550,11 @@ padding-bottom:10%;
 
 #footer {
   z-index:1;
-  padding: 0% 5% 0% 10%;
+  padding: 1% 8%;
+}
+
+.footcontainer{
+
 }
 
 #footer p{
@@ -696,7 +706,7 @@ overflow-x: hidden;
   h3 {
     font-size: 12px;
     line-height: 1.5;
-    font-family: 'Monda', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: left;
     color: black;
     -webkit-text-stroke-width: remove;
@@ -932,15 +942,20 @@ i {
   padding: 5%;
   font-size: 8px;
 }
+
+.footcontainer{
+  margin-left:5%;
+}
+
 #footer p{
-  font-size:8px;
+  font-size:10px;
 
 }
 
 #footer li a{
   font-family: 'Monda', sans-serif;
   text-align: left;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.5;
   color:darkgrey;
   -webkit-text-stroke-width: none;
