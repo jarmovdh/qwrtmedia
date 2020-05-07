@@ -34,18 +34,15 @@
 
 </head>
 
-<body data-barba="wrapper" onload="startTime()">
+<body onload="startTime()">
 
   <div class="cursor"></div>
-  <div class="load-container">
-    <div class="loading-screen">
 
-    </div>
-  </div>
+  <div id="containergrain">
 
 
-  <main data-barba="containterbarba" data-barba-namespace="home-section">
 
+  <div class="grained"></div>
     <div class="progress-container">
       <div class="progress-bar" id="myBar"></div>
     </div>
@@ -86,13 +83,11 @@
 
 
         <div class="container1b col-lg-6 col-md-12 col-sm-12">
-          <div class="introtext">
+          <div class="introtext" data-aos="fade-in">
             <p>
-              たてすか | QWRT | is an Amsterdam based team that shares a passion for creating
-              content and designing delightful products. As a digital team we build websites that drive traffic and engagement for startups and brands.
-
-              With our pillars, we create valuable platforms based on a strategic foundation. A success formula that ensures that your brand remains relevant online.
-              We provide services and digital products that helps your business to develop and grow. Whether you’re just getting started or an established brand, we're here to authorize your online presence.  </p>
+              たてすか | QWRT | is an Amsterdam based agency with a passion for creating content and designing digital platforms. As a digital team we build websites that drive traffic and engagement for startups and brands.
+              With our approach we build valuable platforms based on a strategic foundation. A success formula that ensures your brand remains relevant online.
+            </p>
           </div>
         </div>
         <span class="arrow" style='font-size:40px ;'>&#8595;</span>
@@ -123,21 +118,27 @@
           <h3>What we do:</h3>
         </div>
         <div class="servicetext col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
-          <p> We built brands from a wide range of sectors, and help them achive their online or offline goals. We create digital experiences for brands and startups through photography, design and copywriting.
+          <p> We built brands from a wide range of sectors, and help them achive their online or offline goals. We create digital experiences for brands and startups through photography, design and copywriting. The services we provide and digital
+             helps your business to grow and develop. Whether you’re just getting started or an established brand, we're here to authorize your online presence.
           </p>
         </div>
         <div class="servicehead col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
-          <h3>Our Approach:</h3>
+          <h3>Our approach:</h3>
         </div>
+        <img src="images/mockup2.png" class="mockup" style="width:60%">
+
         <div class="servicetext col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
-          <p> We built brands from a wide range of sectors, and help them achive their online or offline goals. From strategy, design to development: We built brands from a wide range of sectors, and help them achive their online or offline goals. From strategy, design to development:
+          <p>
+             We built brands from a wide range of sectors, and help them achive their online or offline goals. From strategy, design to development: We built brands from a wide range of sectors, and help them achive their online or offline goals.
+            From strategy, design to development:
           </p>
         </div>
         <div class="servicehead col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
-          <h3>We can help you with:</h3>
+          <h3>We help you with:</h3>
         </div>
         <div class="servicetext col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
-          <p> SEO Strategy, Social Media Strategy, Web Design, Mobile Design, E-commerce, Web Development, Social Media Campaigns, SEO, E-Mail Marketing, Social Media Marketing, Photography (film & digital), Product Photography, Copywriting (SEO, Web), Social Media Content.
+          <p> SEO Strategy, Social Media Strategy, Web Design, Mobile Design, E-commerce, Web Development, Social Media Campaigns, SEO, E-Mail Marketing, Social Media Marketing, Photography (film & digital), Product Photography, Copywriting (SEO,
+            Web), Social Media Content.
           </p>
         </div>
         <div class="servicehead col-lg-6 col-md-6 col-sm-12" data-aos="fade-in">
@@ -148,7 +149,7 @@
           </p>
         </div>
       </div>
-        <!-- <div class="services1a col-lg-6 col-md-6 col-sm-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
+      <!-- <div class="services1a col-lg-6 col-md-6 col-sm-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
 
 
           <div class="servicetext">
@@ -200,9 +201,6 @@
           <a href="portraits.html">
             <img src="images/imagegallery/portrait-1.jpg" class="imageshome" style="width:100%">
           </a>
-          <!-- <a href="portraits.html">
-            <img src="images/imagegallery/iceland-2.jpg" class="imageshome" style="width:100%">
-          </a> -->
           <img src="images/imagegallery/bruiloft-2.jpg" class="imageshome" style="width:100%">
 
         </div>
@@ -241,6 +239,7 @@
         </div>
 
     </section>
+      </div>
 
     <footer id="footer">
       <div class="footcontainer">
@@ -256,12 +255,13 @@
 
           </div>
         </div>
-      </div>
+</div>
     </footer>
-    </div>
-  </main>
+
+</div>
 
 
+  <script src="grained.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
@@ -272,6 +272,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/CSSRulePlugin.min.js" integrity="sha256-OGsgm5y7cRWEepoRRBI/w4BKpK8zpJ7SqbLy9lIMhlg=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
   <script type=text/javascript src="index.js"></script>
+
+
+
 
   <script>
     const cursor = document.querySelector('.cursor');
@@ -312,6 +315,23 @@
     }
   </script>
 
+  <script>
+
+  var options = {
+"animate": true,
+"patternWidth": 100,
+"patternHeight": 100,
+"grainOpacity": 0.05,
+"grainDensity": 1,
+"grainWidth": 1,
+"grainHeight": 1
+}
+grained("#containergrain", options);
+
+/*
+background-color :rgb(204, 204, 204)
+*/
+  </script>
 
 
 

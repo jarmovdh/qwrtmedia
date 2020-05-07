@@ -30,7 +30,7 @@ h3 {
   color: #000;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
 
 }
 
@@ -159,12 +159,12 @@ float: right;
 }
 
 .introtext {
-  padding: 5% 0%;
+  padding: 8% 0%;
 }
 .introtext p {
   color: black;
   text-align: justify;
-  font-size: 15px;
+  font-size: 17px;
 }
 span.logointro{
   display:inline-block;
@@ -336,6 +336,7 @@ padding-top: 2%;
   font-family: 'Helvetica', sans-serif;
   font-size: 18px;
   color: darkgrey;
+  font-weight: bold;
 
 }
 #messenger {
@@ -407,7 +408,12 @@ padding-top: 2%;
 
 }
 
-
+.mockup {
+  position: absolute;
+ z-index: -1;
+  left:-160px;
+  margin-top: 40px;
+}
 
 /* .sidebarright {
   position: fixed;
@@ -437,6 +443,10 @@ padding: 0% 10% 5% 10%;
   padding-top: 20px;
 }
 
+.servicehead h3{
+  text-align: right;
+}
+
 .servicehead{
   padding-left: 0px;
 }
@@ -448,6 +458,8 @@ padding-bottom:5%;
   text-align: justify;
   font-size: 15px;
 }
+
+
 
 #section4{
   padding: 2% 10%;
@@ -520,7 +532,7 @@ padding-bottom:5%;
 
 
 #section5{
-  padding: 2% 8%;
+  padding: 5% 20%;
 }
 
 #section5 a{
@@ -533,8 +545,8 @@ padding-bottom:5%;
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
   color:darkgrey;
-  font-size: 4rem;
-  text-align: justify;
+  text-align: left;
+  font-size: 2.5rem;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   -webkit-text-fill-color: transparent;
@@ -561,6 +573,7 @@ padding-bottom:5%;
   color:darkgrey;
   font-size: 0.8rem;
   line-height: 1.2;
+
 
 
 }
@@ -800,6 +813,7 @@ overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: darkgrey;
+    font-weight: bold;
   }
 
 .introtext p{
@@ -833,8 +847,8 @@ overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
   color: darkgrey;
-  font-size: 2rem;
-  text-align: justify;
+  font-size: 1.8rem;
+  text-align: left;
 
 }
 
@@ -859,7 +873,9 @@ padding-bottom: 2%;
 padding-left:0;
 }
 
-
+.servicehead h3{
+  text-align: left;
+}
 
 #section5 h3{
   font-family: 'Roboto', sans-serif;
@@ -943,7 +959,7 @@ i {
 
 #footer{
   font-family: 'Roboto', sans-serif;
-  padding: 5%;
+  padding: 5% ;
   font-size: 8px;
 }
 

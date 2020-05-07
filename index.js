@@ -187,7 +187,12 @@ tl.to(".arrow", {
   delay: 1,
 });
 
-
+// tl.from(".mockup", {
+//   duration: 4,
+//   x: -200,
+//   opacity: 0,
+//   delay: 2,
+// });
 
 
 var scene = new ScrollMagic.Scene({
@@ -205,3 +210,32 @@ var scene = new ScrollMagic.Scene({
   .setTween(tl)
   .addTo(controller)
   .reverse(true);
+
+  var controller2 = new ScrollMagic.Controller();
+  var tl2 = new TimelineMax();
+
+
+
+  tl2.from(".mockup", {
+    duration: 2,
+    x: -200,
+    opacity: 0,
+    delay: 2,
+  });
+
+
+  var scene = new ScrollMagic.Scene({
+      triggerElement: "#section3",
+      triggerHook: 2,
+      duration: "70%"
+    })
+
+    .addIndicators({
+      colorTrigger: "red",
+      colorStart: "red",
+      colorEnd: "red",
+      indent: 5
+    })
+    .setTween(tl2)
+    .addTo(controller2)
+    .reverse(false);
