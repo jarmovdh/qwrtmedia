@@ -15,6 +15,9 @@ body {
 
 }
 
+u {
+
+}
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
@@ -400,11 +403,15 @@ padding-top: 2%;
   padding: 0;
 }
 .content4left h4{
+  z-index: -1;
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
-  color: #ffcc00;
+  color: black;
   font-size: 4rem;
   text-align: justify;
+
+
+
 
 }
 
@@ -532,10 +539,12 @@ padding-bottom:5%;
 
 
 #section5{
-  padding: 5% 20%;
+  padding: 5% 10%;
+
 }
 
 #section5 a{
+    display:inline;
     color: darkgrey;
     text-decoration: underline;
     background-color: transparent;
@@ -833,7 +842,7 @@ overflow-x: hidden;
 
 .content4left h4{
   font-family: 'Roboto', sans-serif;
-  color: #ffcc00;
+  color: black;
   font-size: 2em;
   text-align: left;
   text-align: justify;
@@ -1107,6 +1116,7 @@ Medium devices (tablets, 768px and up)
   font-size: 1.5rem;
   text-align: left;
   text-align: justify;
+  font-weight: bold;
 }
 
 .conten4sub{
