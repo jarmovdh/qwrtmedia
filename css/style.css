@@ -38,11 +38,11 @@ h3 {
 }
 
 h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 2rem;
   text-align: center;
-  font-weight: bold;
   z-index: 10;
+
 }
 
 p {
@@ -406,9 +406,10 @@ padding-top: 2%;
   z-index: -1;
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
-  color: black;
+  color: #888888;;
   font-size: 3.5rem;
   text-align: justify;
+  text-transform: full-width;
 
 
 
@@ -842,8 +843,8 @@ overflow-x: hidden;
 
 .content4left h4{
   font-family: 'Roboto', sans-serif;
-  color: black;
-  font-size: 2em;
+  color: #888888;
+  font-size: 2rem;
   text-align: left;
   text-align: justify;
 }
