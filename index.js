@@ -1,10 +1,113 @@
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+//sticky pin 2/
+
+$(function () { // wait for document ready
+		// build scene
+		var scene = new ScrollMagic.Scene({
+      triggerElement: ".arrow",
+      duration: 400,
+      pushFollowers: false,
+      offset: 400,
+    })
+						.setPin(".imagecontainer2")
+						.addIndicators({name: "4 (duration: 400)"}) // add indicators (requires plugin)
+						.addTo(controller);
+
+	});
+
+// image change on scroll
+
+
+
+var images2 = [
+		"images/imagegallery/carhartt_nb-1.jpg",
+		"images/imagegallery/portrait-1.jpg",
+		"images/imagegallery/bruiloft-2.jpg",
+    "images/imagegallery/carhartt_elmwood_insta2.jpg",
+
+	];
+
+	// TweenMax can tween any property of any object. We use this object to cycle through the array
+	var obj = {curImg: 0};
+
+	// create tween
+	var tween = TweenMax.to(obj, 0.5,
+		{
+			curImg: images2.length - 1,	// animate propery curImg to number of images
+			roundProps: "curImg",				// only integers so it can be used as an array index
+			repeat: 3,									// repeat 3 times
+			immediateRender: true,			// load first image automatically
+			ease: Linear.easeNone,			// show every image the same ammount of time
+			onUpdate: function () {
+			  $("#myimg2").attr("src", images2[obj.curImg]); // set the image source
+			}
+		}
+	);
+
+	// init controller
+	var controller = new ScrollMagic.Controller();
+
+
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: ".arrow", duration: 400, offset: 400})
+					.setTween(tween)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+//sticky pin 1/
+$(function () { // wait for document ready
+		// build scene
+		var scene = new ScrollMagic.Scene({
+      triggerElement: ".arrow",
+      duration: 400,
+      pushFollowers: false,
+      offset: 400,
+    })
+						.setPin(".imagecontainer")
+						.addIndicators({name: "2 (duration: 400)"}) // add indicators (requires plugin)
+						.addTo(controller);
+
+	});
+
+// image change on scroll
+
+
+
+var images = [
+		"images/imagegallery/carhartt_nb-2.jpg",
+		"images/imagegallery/nbkarim-1.jpg",
+		"images/imagegallery/camaro-1.jpg",
+    "images/imagegallery/carhartt_elmwood.jpg",
+
+	];
+
+	// TweenMax can tween any property of any object. We use this object to cycle through the array
+	var obj = {curImg: 0};
+
+	// create tween
+	var tween = TweenMax.to(obj, 0.5,
+		{
+			curImg: images.length - 1,	// animate propery curImg to number of images
+			roundProps: "curImg",				// only integers so it can be used as an array index
+			repeat: 3,									// repeat 3 times
+			immediateRender: true,			// load first image automatically
+			ease: Linear.easeNone,			// show every image the same ammount of time
+			onUpdate: function () {
+			  $("#myimg").attr("src", images[obj.curImg]); // set the image source
+			}
+		}
+	);
+
+	// init controller
+	var controller = new ScrollMagic.Controller();
+
+
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: ".arrow", duration: 400, offset: 400})
+					.setTween(tween)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
 
 //clock
 function startTime() {
@@ -185,6 +288,10 @@ tl.to(".arrow", {
   y: -20,
   opacity: 0,
   delay: 1,
+});
+
+tl.to("#messenger", {
+  transform: 0.5,
 });
 
 // tl.from(".mockup", {
