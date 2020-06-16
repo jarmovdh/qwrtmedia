@@ -479,7 +479,7 @@ span.logointro {
 
 /*section 2 Big Yellow Text*/
 #section2 {
-  padding:0;
+  padding: 0 20%;
 }
 
 #section2 h2{
@@ -881,7 +881,7 @@ span.logointro {
   }
 
   .introtext p {
-    font-size: 16px;
+    font-size: 13px;
   }
   .container1b {
     padding-left: 0;
@@ -952,12 +952,14 @@ span.logointro {
 
 
 
-  #section2 {}
+  #section2 {
+    padding: 0
+  }
 
   .content4left h4 {
     font-family: 'Roboto', sans-serif;
     color: #888888;
-    font-size: 2rem;
+    font-size: 13px;
     text-align: left;
     text-align: justify;
   }
@@ -1217,7 +1219,7 @@ span.logointro {
     .content4left h4 {
       font-family: 'Roboto', sans-serif;
       color: #ffcc00;
-      font-size: 1.5rem;
+      font-size: 13px;
       text-align: left;
       text-align: justify;
       font-weight: bold;
