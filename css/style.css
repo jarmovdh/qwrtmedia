@@ -111,7 +111,7 @@ button {
 
 /*header nav*/
 #header {
-  padding: 3% 5% 0% 5%;
+  padding: 0% 5% 0% 5%;
 
 }
 
@@ -188,18 +188,31 @@ button {
   position: relative;
   left: auto;
   right: auto;
+  margin-bottom: 20px;
 }
 
+.contacttext{
+  padding-top: 10%;
+}
 
+.contacttext p{
+  z-index: -1;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  color: #888888;
+  font-size: 15px;
+  text-align: justify;
+}
 
 /*section 1: intro*/
 #section1 {
-  padding: 0% 2% 2%;
-  height: 90vh;
+  padding: 0% 0% 2% 2%;
+
 }
 
 .logosvg {
   width: 6%;
+  margin-top: 10px;
 }
 
 
@@ -712,6 +725,11 @@ span.logointro {
     padding: 10% 10% 2%;
 
   }
+
+  .introtext {
+    padding-top: 5%;
+  }
+
 
   .introtext p {
     font-size: 13px;
