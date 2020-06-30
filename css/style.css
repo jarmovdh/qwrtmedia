@@ -707,7 +707,7 @@ span.logointro {
   }
 
   #section1 {
-    padding: 10% 15% 2%;
+    padding: 10% 10% 2%;
 
   }
 
@@ -741,6 +741,7 @@ span.logointro {
   }
 
   #clock {
+    display: none;
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     color: darkgrey;
