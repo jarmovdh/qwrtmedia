@@ -150,8 +150,8 @@ button {
 /* The navigation links inside the overlay */
 .overlay a {
   padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
+  text-decoration: underline;
+  font-size: 16px;
   color: #818181;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
@@ -846,7 +846,7 @@ span.logointro {
 
   }
   .clientslogo {
-    max-width: 80%;
+    max-width: 100%;
 
   }
 
