@@ -747,6 +747,9 @@ span.logointro {
     font-weight: normal;
   }
 
+  .contacttext p {
+    font-size: 13px;
+  }
 
 
   .logosvg {
