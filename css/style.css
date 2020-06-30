@@ -41,6 +41,14 @@ h4 {
   z-index: 10;
 }
 
+h5{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  font-size: 18px;
+
+}
+
 p {
   font-family: 'Monda', sans-serif;
   text-align: left;
@@ -85,10 +93,10 @@ button {
   }
 }
 
-#wrapper {
+/* #wrapper {
   width: 100vw;
   height: 100vh;
-}
+} */
 
 .load-container {
   position: fixed;
@@ -104,35 +112,89 @@ button {
 /*header nav*/
 #header {
   padding: 3% 5% 0% 5%;
-  z-index: 1;
+
 }
 
-.nav {
-  float: right;
-  padding-right: 10%;
+.overlaymenuholder{
+  position: fixed;
+  padding-top: 20px;
+  padding-left: 80%;
+  padding-right: 5%;
+  z-index: 99;
+}
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
-.nav li {
-  display: inline;
-  padding: 5px;
-  mix-blend-mode: difference;
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  padding: 0 10%;
+  top: 10%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-.nav li a {
-  display: inline;
-  color: #000;
-  font-size: 1.2rem;
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
   text-decoration: none;
-  float: right;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
 }
 
-.nav li a:hover {
-  text-decoration: underline;
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
 }
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 30px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+/*carousel overlay menu*/
+
+.carousel-caption{
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
+
 
 /*section 1: intro*/
 #section1 {
-  padding: 8% 20% 2%;
+  padding: 5% 20% 2%;
 }
 
 .logosvg {
@@ -140,14 +202,14 @@ button {
 }
 
 
-.container1a {
+.logoholder {
   position: fixed;
   padding-left: 0;
   padding-right: 5%;
   z-index: 1;
 }
 
-.container1b {
+.container-introtext {
 
 }
 
@@ -172,7 +234,7 @@ button {
   font-family: 'Roboto', sans-serif;
   line-height: 1.3;
   color: #888888;
-  font-size: 16px;
+  font-size: 15px;
   text-align: justify;
 }
 
@@ -186,172 +248,12 @@ span.logointro {
   padding-top: 2%;
 }
 
-.rowhead {
-  float: right;
-}
 
-.newnav {
-  font-family: 'Roboto'
-    padding: 5px;
-  font-size: 2rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-}
-
-.newnav li {
-  display: inline;
-  text-align: left;
-  font-size: 2rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-}
-
-.newnav {
-  font-family: 'Roboto'
-    padding: 5px;
-  font-size: 1.5rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-}
-
-.newnav li {
-  display: inline;
-  text-align: left;
-  font-size: 2rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-}
-
-.newnav li a {
-  display: inline;
-  padding: 5px;
-  font-size: 2rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-}
-
-.newnav li a:hover {
-  text-decoration: line-through;
-  color: white;
-}
-
-/* overlaymenu */
-.navbutton {
-  position: absolute;
-  left: 95%;
-  top: 50px;
-  float: right;
-  color: black;
-}
-
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
-  width: 0;
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0, 0, 0);
-  /* Black fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/opacity */
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%;
-  /* 25% from the top */
-  width: 100%;
-  /* 100% width */
-  text-align: center;
-  /* Centered text/links */
-  margin-top: 30px;
-  /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  /* Display block instead of inline */
-  transition: 0.3s;
-  /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-.logo1 {
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: black;
-}
-
-.logo1 a {
-  font-family: 'Roboto'
-    padding: 5px;
-  font-size: 2rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-}
-
-.logo1 a:hover {
-  font-family: 'Roboto'
-    padding: 5px;
-  font-size: 2rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
-  text-decoration: none;
-}
 
 #clock {
-  padding-left: 5px;
+  padding-left: 10px;
   font-family: 'Helvetica', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: darkgrey;
   font-weight: bold;
 }
@@ -451,19 +353,7 @@ span.logointro {
   height: auto;
 }
 
-.imagecontainer h2 {
-  font-family: "Archivo Black", sans-serif;
-  text-transform: uppercase;
-  max-width: 5em;
-  letter-spacing: -.04em;
-  font-weight: 400;
-  font-size: 5rem;
-  mix-blend-mode: difference;
-  position: absolute;
-  z-index: 10;
-  top: -40px;
-  left: 500px;
-}
+
 
 #imagesequence {
   vertical-align: top;
@@ -492,16 +382,13 @@ span.logointro {
   z-index: -1;
 
 }
-.content4left {
-  padding: 0;
-}
 
-.content4left h4 {
+.company-text h4 {
   z-index: -1;
   font-family: 'Roboto', sans-serif;
   line-height: 1.3;
   color: #888888;
-  font-size: 16px;
+  font-size: 15px;
   text-align: justify;
 }
 
@@ -511,7 +398,6 @@ span.logointro {
       white-space: nowrap;
       overflow: hidden;
 
-      text-decoration: underline;
       vertical-align: top;
 }
 
@@ -548,22 +434,7 @@ span.logointro {
   margin-top: 40px;
 }
 
-.sidebarright {
-  position: fixed;
-  top: 250px;
-  right: -950px;
-  width: 400px;
-  margin-right: 800px;
-  font-weight: bold;
-  transform: rotate(90deg);
-}
 
-.sidebarright a {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 4px;
-  font-weight:normal;
-
-}
 #section2photo {
   padding: 5% 5%;
 }
@@ -576,42 +447,7 @@ span.logointro {
   padding-top: 50px;
 }
 
-/* Section 3 services */
-#section3 {
-  padding: 0% 10% 5% 10%;
-}
 
-.services1a {
-  padding-top: 20px;
-  padding-left: 0;
-}
-
-.services1b {
-  padding-top: 20px;
-}
-
-.servicehead h3 {
-  text-align: right;
-}
-
-.servicehead {
-  padding-left: 0px;
-}
-
-.servicetext {
-  padding-bottom: 5%;
-}
-
-.servicetext p {
-  color: black;
-  text-align: justify;
-  font-size: 15px;
-}
-
-#section4 {
-  padding: 2% 10%;
-  margin-bottom: 50px;
-}
 
 .photorow {
   display: -ms-flexbox;
@@ -694,12 +530,17 @@ span.logointro {
   text-align: left;
 }
 
+/*clients logo*/
+
 .clientsholder {
   padding: 0 15px;
 }
 
+.contentclients{
+  padding: 0 5%;
+}
 .clientslogo {
-  max-width: 100%;
+  max-width: 95%;
   color:#808080;
 
 }
@@ -738,16 +579,23 @@ span.logointro {
   text-decoration: none;
 }
 
-.companyinfo {
-  margin-left: 500px;
+.footnav {
+  padding-left: 0;
 }
 
-.companyinfo p {
-  font-family: 'Monda', sans-serif;
-  color: darkgrey;
-  font-size: 0.8rem;
-  line-height: 1.2;
+.footnav li {
+  font-size: 8px;
+  display: inline;
+  padding: 5px;
 }
+
+.footnav li a {
+  font-size: 8px;
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 
 /*singlepages*/
 #project {
@@ -823,22 +671,7 @@ span.logointro {
   padding-left: 0;
 }
 
-.footnav {
-  padding-left: 0;
-}
 
-.footnav li {
-  font-size: 8px;
-  display: inline;
-  padding: 5px;
-}
-
-.footnav li a {
-  font-size: 8px;
-  color: black;
-  font-size: 1rem;
-  text-decoration: none;
-}
 
 /*Media Queries*/
 @media only screen and (max-width: 812px) and (min-width: 320px) {
@@ -867,23 +700,21 @@ span.logointro {
     text-decoration: none;
   }
 
-  .nav {
-    display: none;
-  }
+
 
   .cursor {
     display: none;
   }
 
   #section1 {
-    padding: 22% 15% 2%;
+    padding: 10% 15% 2%;
 
   }
 
   .introtext p {
     font-size: 13px;
   }
-  .container1b {
+  .container-introtext {
     padding-left: 0;
     padding-right: 0;
   }
@@ -896,23 +727,7 @@ span.logointro {
     font-weight: normal;
   }
 
-  .logo1 {
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
 
-  .logo1 a {
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
 
   .logosvg {
     width: 10%;
@@ -925,29 +740,12 @@ span.logointro {
     float: right;
   }
 
-  .navbutton {
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    float: right;
-  }
-
-  #messenger {
-    transform: translate(-50%, -50%);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    white-space: nowrap;
-    text-shadow: 0 2px 2px rgba(#000, 0.9);
-    left: 54%;
-  }
-
   #clock {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 11px;
     color: darkgrey;
     font-weight: bold;
+    padding-left: 1px;
   }
 
 
@@ -968,7 +766,7 @@ span.logointro {
     font-size: 0.8rem;
   }
 
-  .conta
+
   .contacttext h4 {
     font-family: 'Roboto', sans-serif;
     line-height: 1.2;
@@ -977,32 +775,11 @@ span.logointro {
     text-align: left;
   }
 
-  #section3 p {
-    font-size: 12px;
-    line-height: 1.5;
-  }
 
-  .services1a {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
 
-  .services1b {
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .servicetext {
-    padding-bottom: 2%;
-    padding-left: 0;
-  }
-
-  .servicehead h3 {
-    text-align: left;
-  }
   #section5{
   padding: 22% 15% 2%;
+
   }
 
 
@@ -1015,47 +792,7 @@ span.logointro {
     text-align: justify;
   }
 
-  .content4sub p {
-    font-size: 0.8rem;
-    line-height: 1.5;
-    letter-spacing: inherit;
-  }
 
-  #section6 {
-    padding: 5% 10% 0% 10%;
-    margin-bottom: 50px;
-  }
-
-  .services {
-    padding: 2% 5%;
-    height: 100vh;
-  }
-
-  .services h4 {
-    position: relative;
-    color: black;
-    font-size: 3.5rem;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-  }
-
-  .services li {
-    padding: 2% 15%;
-    font-family: 'Monda', sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    color: #696969;
-    text-align: left;
-  }
-
-  .serviceA {
-    margin-top: 50px;
-    padding-left: 80px;
-  }
-
-  .serviceB {
-    margin-top: 20vh;
-  }
 
   a {
     display: block;
@@ -1098,7 +835,9 @@ span.logointro {
     font-size: 8px;
   }
 
-  .footcontainer {}
+  .footcontainer {
+
+  }
 
   #footer p {
     font-size: 10px;
@@ -1116,10 +855,7 @@ span.logointro {
     text-decoration: none;
   }
 
-  .office ul {
-    float: left;
-    padding-left: 0;
-  }
+
 
   .footnav {
     float: left;

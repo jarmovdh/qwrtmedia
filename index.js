@@ -1,4 +1,14 @@
-//
+
+
+
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
 // //sticky pin 2/
 //
 // $(function () { // wait for document ready
@@ -107,6 +117,8 @@
 // 					.setTween(tween)
 // 					.addIndicators() // add indicators (requires plugin)
 // 					.addTo(controller);
+
+
 
 
 //clock

@@ -18,7 +18,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i&display=swap" rel="stylesheet">
 
 
-
   <!-- Bootsrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -37,18 +36,105 @@
 
 <body onload="startTime()">
 
+
+
   <div class="cursor"></div>
 
 
     <div class="progress-container">
       <div class="progress-bar" id="myBar"></div>
     </div>
+
     <header id="header">
+      <!-- The overlay -->
+      <div class="overlaymenuholder">
+        <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <div class="row">
+
+
+          <div class="overlayleft col-lg-6 col-md-12 col-sm-12">
+            <div class="introtext">
+              <p>
+                QWRT can help you throughout your digital journey. With a keen understanding of what's happening in the digital landscape we team-up with creatives, brands & startups to complement their concepts with our creative and technical knowledge. We work with you to define your product vision, design a strategy and improve your online business outcomes.
+                <br />
+                <br />
+                We're currently expanding our portfolio and available for your project.
+                <br />
+                <br />
+                Get in contact through our socials:
+
+                <br />
+                <br />
+                Our send a email to email us at <a href="mailto:hello@qwrt.nl">hello@qwrt.nl</a>
+
+
+              </p>
+            </div>
+          </div>
+          <div class="overlayright col-lg-6 col-md-12 col-sm-12">
+            <div class="introtext">
+              <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/mockup.png" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+    <h5>DIVAMSTERDAM.COM</h5>
+    <p>Lightspeed eCom, Product Photography, SEO Strategy, Social Media</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/ipadmockup.png" alt="Second slide">
+      <div class="carousel-caption d-none d-sm-block">
+    <h5>DIVAMSTERDAM.COM</h5>
+    <p>Lightspeed eCom, Product Photography, SEO Strategy, Social Media</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/workadidas.png" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+    <h5>ADIDAS</h5>
+    <p>SEO Copywriting, Product Descriptions</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/pnsmockup.png" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+    <h5>STUDIO PANDS</h5>
+    <p>Concept, Photography, Webdesign</p>
+  </div>
+    </div>
+  </div>
+
+</div>
+            </div>
+          </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()" style="font-size:20px;cursor:pointer" >&#9776; work</span>
+      </div>
+
       <div class="row">
 
 
 
-        <div class="container1a col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
+        <div class="logoholder col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
 
           <div class="logo1">
             <img src="images/logotest.png" class="logosvg">
@@ -56,9 +142,15 @@
 
           <div id="clock"></div>
 
+
+
         </div>
 
+
+
       </div>
+
+
     </header>
 
 
@@ -69,16 +161,15 @@
       <div class="row">
 
 
-        <div class="container1b col-lg-12 col-md-12 col-sm-12">
+        <div class="container-introtext col-lg-12 col-md-12 col-sm-12">
           <div class="introtext" data-aos="fade-in">
             <p>
-              たてすか | QWRT | is an Amsterdam based studio specialized in content and developing digital platforms.
+              たてすか | QWRT | is a new Amsterdam based digital agency specialized in content and developing digital platforms.
 
                With a creative network we build websites that drive traffic and engagement for startups and brands.
               With our approach we build valuable platforms based on a strategic foundation. A success formula that ensures your brand remains relevant online.
               <br />
-              <br />
-              We create digital experiences for brands through <u class="1" data-aos="fade-in" >strategy</u> <u>photography</u> <u>design</u> and <span class="line anim-typewriter">copywriting.</span></p>
+              <p class="1" data-aos="fade-in"><u>The tools we use: </u><br /> Strategy, photography, webdesign and <span class="line anim-typewriter">copywriting.</span></p>
               <p>
 
 
@@ -87,8 +178,9 @@
             SEO Strategy, Social Media Strategy, Web Design, Mobile Design, E-commerce, Web Development, Social Media Campaigns, SEO, E-Mail Marketing, Social Media Marketing, Photography (film & digital), Product Photography, Copywriting (SEO, Web), Social Media Content.
             <br />
             <br />
-
+  <u>Clients:</u>
             </p>
+
           </div>
         </div>
         <div class="row">
@@ -104,6 +196,7 @@
 
             <div class="contentclients col-lg-12 col-md-12 col-sm-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
             <div class="row">
+
               <div class="col-lg-3 col-md-3 col-sm-6 col-6" data-aos="fade-in" data-aos-delay="300"><img class="clientslogo" src="images/adidaslogo.png" alt="adidas"></div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-6" data-aos="fade-in" data-aos-delay="900"><img class="clientslogo" src="images/divlogo.png" alt="div"></div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-6" data-aos="fade-in" data-aos-delay="1500"><img class="clientslogo" src="images/keycontent.png" alt="keycontent"></div>
@@ -122,7 +215,7 @@
   <div id="carouselExampleControlsFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="images/imagegallery/carhartt_elmwood.png" alt="First slide">
+        <img class="d-block w-100 s" src="images/imagegallery/carhartt_elmwood.png" alt="First slide">
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="images/imagegallery/carhartt_nb-1.jpg" alt="Second slide">
@@ -156,16 +249,14 @@
     <section id="section5" data-aos="fade-in" data-aos-easing="ease-in-sine">
 
       <div class="row">
-        <div class="content4left col-lg-12 col-md-12 col-sm-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
-
+        <div class="company-text col-lg-12 col-md-12 col-sm-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
           <h4>
-          Innovate:
+          <u>Innovate:</u>
           <br />
-          More than ever it is important to remain relevant and visually present in the online atmosphere. Wether you are a creative, retailer or brand. We can help you with archieving your online goals.
-          We are closely involved in the developments of our time. We work from a flexible structure and have a large and versatile network around us.
+          QWRT can help you throughout your digital journey. With a keen understanding of what's happening in the digital landscape we team-up with creatives, brands & startups to complement their concepts with our creative and technical knowledge. We work with you to define your product vision, design a strategy and improve your online business outcomes.
           <br />
           <br />
-          Approach:
+          <u>Approach:</u>
           <br />
           in-house knowledge to realize powerful and future-proof digital solutions.
           We transform your brand story into a digital experience. With strategy, design and technique as ingredients of our formula. Complex issues simplified and answered in digital solutions. Interactive and elaborated in detail. This is how we tell your brand story online.
@@ -203,8 +294,16 @@
 
 
     <section id="section5" data-aos="fade-in">
+      <div class="container">
+  <div class="row">
+
+  </div>
+</div>
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
+
+
+</div>
 
           <div class="content4left col-lg-12 col-md-12 col-sm-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
 
@@ -273,6 +372,7 @@
     })
   </script>
 
+
   <script>
     AOS.init({
       duration: 1000,
@@ -280,6 +380,8 @@
       once: true,
     });
   </script>
+
+
 
   <script>
     window.onscroll = function() {
