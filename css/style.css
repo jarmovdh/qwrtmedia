@@ -23,15 +23,21 @@ h1 {
   text-align: left;
 }
 
-h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
+h2 {
+  font-size: 60px;
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h3 {
+  font-size: 15px;
+  text-align: left;
+  font-family: 'Monda', sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
   color: #000;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
 }
 
 h4 {
@@ -122,74 +128,7 @@ button {
   padding-right: 5%;
   z-index: 99;
 }
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 1); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
 
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  padding: 0 10%;
-  top: 10%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 8px;
-  text-decoration: underline;
-  font-size: 16px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 30px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-
-
-/*carousel overlay menu*/
-
-.carousel-caption{
-  position: relative;
-  left: auto;
-  right: auto;
-  margin-bottom: 20px;
-}
 
 .contacttext{
   padding-top: 10%;
@@ -206,13 +145,14 @@ button {
 
 /*section 1: intro*/
 #section1 {
-  padding: 0% 0% 2% 2%;
+  padding: 0% 20% 2%;
 
 }
 
 .logosvg {
   width: 6%;
-  margin-top: 10px;
+  margin-top: 50px;
+
 }
 
 
@@ -228,28 +168,27 @@ button {
 }
 
 .introtext {
-  padding-top: 20%;
+  padding-top: 1%;
 }
 
-.introtext h2 {
-  font-family: "Archivo Black", sans-serif;
-  text-transform: uppercase;
-  max-width: 5em;
-  letter-spacing: -.04em;
-  font-weight: 400;
-  font-size: 5rem;
+
+
+.introtext1 p {
+  padding-top: 40%;
   z-index: -1;
-  position: absolute;
-  top: 0px;
-  left: 600px;
+ font-family: 'Monda', sans-serif;
+ line-height: 1.6;
+  color: black;
+  font-size: 13px;
+  text-align: justify;
 }
 
-.introtext p {
+.introtext2 p {
   z-index: -1;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.3;
-  color: #888888;
-  font-size: 15px;
+ font-family: 'Monda', sans-serif;
+ line-height: 1.6;
+  color: black;
+  font-size: 13px;
   text-align: justify;
 }
 
@@ -263,7 +202,11 @@ span.logointro {
   padding-top: 2%;
 }
 
+.introheader{
+  padding: 5% 0%;
+  position: fixed;
 
+}
 
 #clock {
   padding-left: 10px;
@@ -387,16 +330,7 @@ span.logointro {
   padding: 0 20%;
 }
 
-#section2 h2{
-  font-family: "Archivo Black", sans-serif;
-  text-transform: uppercase;
-  max-width: 5em;
-  letter-spacing: -.04em;
-  font-weight: 400;
-  font-size: 5rem;
-  z-index: -1;
-
-}
+#section2
 
 .company-text h4 {
   z-index: -1;
@@ -409,7 +343,7 @@ span.logointro {
 
 .line {
       display:inline-block;
-      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      border-right: 4px solid rgba(255, 255, 255, 0.75);
       white-space: nowrap;
       overflow: hidden;
 
@@ -420,7 +354,7 @@ span.logointro {
 
 .anim-typewriter {
       animation: typewriter 4s steps(15) 1s 1 normal both,
-      blinkTextCursor 500ms steps(40) infinite normal;
+      blinkTextCursor 1000ms steps(45) infinite normal;
 }
 
 @keyframes typewriter {
@@ -428,13 +362,13 @@ span.logointro {
             width: 0;
       }
       to {
-            width: 5.5em;
+            width: 7em;
       }
 }
 
 @keyframes blinkTextCursor {
       from {
-            border-right-color:darkgrey;
+            border-right-color:black;
       }
       to {
             border-right-color: transparent;
@@ -695,6 +629,14 @@ span.logointro {
     line-height: 1.5;
   }
 
+  h2 {
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+
   h3 {
     font-size: 12px;
     line-height: 1.5;
@@ -721,6 +663,9 @@ span.logointro {
     display: none;
   }
 
+
+
+
   #section1 {
     padding: 10% 10% 2%;
 
@@ -731,7 +676,8 @@ span.logointro {
   }
 
 
-  .introtext p {
+  .introtext1 p {
+    padding-top: 80%;
     font-size: 13px;
   }
   .container-introtext {
@@ -761,6 +707,12 @@ span.logointro {
     top: 10px;
     right: 50px;
     float: right;
+  }
+
+  .introheader{
+    padding: 5% 0%;
+    display: inline-block;
+    margin-bottom: 20px;
   }
 
   #clock {
