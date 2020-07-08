@@ -182,7 +182,7 @@ button {
  font-family: 'Monda', sans-serif;
  line-height: 2;
   color: black;
-  font-size: 13px;
+  font-size: 14px;
   text-align: justify;
 }
 
@@ -319,10 +319,16 @@ span.logointro {
   padding: 0% 20% 2%;
 }
 
+.s3 {
+padding: 0% 20% 2%;
+}
 .s4 {
 padding: 0% 20% 2%;
 }
 
+.s4 h2{
+  font-size: 40px;
+}
 #section2
 
 .company-text h4 {
