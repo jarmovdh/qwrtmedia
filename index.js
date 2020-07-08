@@ -1,4 +1,13 @@
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	navigation: true,
+  navigationTooltips: ['Home', 'About', 'Work', 'Contact'],
+  scrollingSpeed: 1500
+});
 
+//methods
+fullpage_api.setAllowScrolling(true);
 
 
 
@@ -291,16 +300,16 @@ TxtType.prototype.tick = function() {
 
 //ScrollMagic + GSAP Sections
 
-var controller = new ScrollMagic.Controller();
-var tl = new TimelineMax();
-
-
-tl.to(".arrow", {
-  duration: 4,
-  y: -20,
-  opacity: 0,
-  delay: 1,
-});
+// var controller = new ScrollMagic.Controller();
+// var tl = new TimelineMax();
+//
+//
+// tl.to(".arrow", {
+//   duration: 4,
+//   y: -20,
+//   opacity: 0,
+//   delay: 1,
+// });
 
 
 

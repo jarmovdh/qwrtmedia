@@ -35,9 +35,8 @@ h3 {
   font-size: 15px;
   text-align: left;
   font-family: 'Monda', sans-serif;
-  font-weight: bold;
   -webkit-font-smoothing: antialiased;
-  color: #000;
+  color: darkgrey;
 }
 
 h4 {
@@ -137,12 +136,17 @@ button {
 .contacttext p{
   z-index: -1;
   font-family: 'Roboto', sans-serif;
-  line-height: 1.3;
+  line-height: 2;
   color: #888888;
   font-size: 15px;
   text-align: justify;
 }
 
+#page-indicator{
+  position: fixed;
+  bottom: 10px;
+  left: 50px;
+}
 /*section 1: intro*/
 #section1 {
   padding: 0% 20% 2%;
@@ -174,10 +178,9 @@ button {
 
 
 .introtext1 p {
-  padding-top: 40%;
   z-index: -1;
  font-family: 'Monda', sans-serif;
- line-height: 1.6;
+ line-height: 2;
   color: black;
   font-size: 13px;
   text-align: justify;
@@ -186,7 +189,7 @@ button {
 .introtext2 p {
   z-index: -1;
  font-family: 'Monda', sans-serif;
- line-height: 1.6;
+ line-height: 2;
   color: black;
   font-size: 13px;
   text-align: justify;
@@ -204,21 +207,30 @@ span.logointro {
 
 .introheader{
   padding: 5% 0%;
-  position: fixed;
 
 }
 
 #clock {
-  padding-left: 10px;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
+  text-align: left;
+  font-family: 'Monda', sans-serif;
+  -webkit-font-smoothing: antialiased;
   color: darkgrey;
-  font-weight: bold;
 }
 
 
 
 
+
+
+
+.arrow {
+  padding-left: 10px;
+  padding-top: 50px;
+  color: darkgrey;
+  font-weight: lighter;
+
+}
 
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
@@ -268,18 +280,6 @@ span.logointro {
     100% { transform: translateY(-5px) }
 }
 
-.arrow {
-  padding-left: 10px;
-  padding-top: 50px;
-  color: darkgrey;
-  font-weight: lighter;
-  -webkit-animation: bounce 3s infinite ease-in-out;
-   -o-animation: bounce 3s infinite ease-in-out;
-   -ms-animation: bounce 3s infinite ease-in-out;
-   -moz-animation: bounce 3s infinite ease-in-out;
-   animation: bounce 3s infinite ease-in-out;
-}
-
 .arrowup {
   color: darkgrey;
   font-weight: lighter;
@@ -289,22 +289,7 @@ span.logointro {
   bottom: 0;
 }
 
-/* Progress bar */
-.progress-container {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  height: 6px;
-  background: #ccc;
-}
 
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 6px;
-  background: darkgrey;
-  width: 0%;
-}
 
 .imagecontainer {
   position: static;
@@ -325,9 +310,17 @@ span.logointro {
   top: 10px;
 }
 
-/*section 2 Big Yellow Text*/
-#section2 {
-  padding: 0 20%;
+.section {
+
+
+  }
+
+  .s2 {
+  padding: 0% 20% 2%;
+}
+
+.s4 {
+padding: 0% 20% 2%;
 }
 
 #section2
@@ -667,7 +660,17 @@ span.logointro {
 
 
   #section1 {
-    padding: 10% 10% 2%;
+    padding: 5% 10% 2%;
+
+  }
+
+  .section {
+
+
+    }
+
+    .s2 {
+padding: 5% 10% 2%;
 
   }
 
@@ -677,7 +680,6 @@ span.logointro {
 
 
   .introtext1 p {
-    padding-top: 80%;
     font-size: 13px;
   }
   .container-introtext {
