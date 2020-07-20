@@ -8,13 +8,17 @@ html, body {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f3f3f3;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: white;
   color: black;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+
 }
 
-u {}
+ul {
+  padding:0;
+}
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -24,26 +28,34 @@ h1 {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 40px;
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  line-height: 0.8;
   -webkit-font-smoothing: antialiased;
+  text-decoration: underline;
 }
 
 h3 {
-  font-size: 15px;
-  text-align: left;
-  font-family: 'Monda', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 0.8;
   -webkit-font-smoothing: antialiased;
-  color: darkgrey;
+  text-decoration: underline;
 }
 
 h4 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 2rem;
+  padding: 10% 2%;
+  font-size: 60px;
   text-align: center;
-  z-index: 10;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: underline;
 }
 
 h5{
@@ -55,11 +67,14 @@ h5{
 }
 
 p {
-  font-family: 'Monda', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
-  font-size: 13px;
-  line-height: 2;
+  font-size: 1em;
+  line-height: 1.8;
+  font-weight: 400;
   color: black;
+  letter-spacing: .028em;
+  -webkit-font-smoothing: antialiased;
 }
 
 button {
@@ -119,15 +134,25 @@ button {
   padding: 0% 5% 0% 5%;
 
 }
-
-.overlaymenuholder{
-  position: fixed;
-  padding-top: 20px;
-  padding-left: 80%;
-  padding-right: 5%;
-  z-index: 99;
+.headnav {
+  margin-top: 50px;
+}
+.headnav li{
+  width: 100px;
+   list-style-type: none;
+   padding: 0;
+   padding-left:0;
+   margin:0px;
+   letter-spacing: 0.05em;
+   line-height: 1rem;
+   font-size: .875rem;
+    text-transform: lowercase;
 }
 
+.headnav ul {
+   padding-left: 0;
+
+}
 
 .contacttext{
   padding-top: 10%;
@@ -135,60 +160,90 @@ button {
 
 .contacttext p{
   z-index: -1;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 2;
   color: #888888;
   font-size: 15px;
   text-align: justify;
 }
 
+.sidebar{
+  position: fixed;
+  top: 50%;
+  transform: rotate(-90deg);
+  font-size: 0.65rem;
+  letter-spacing: .225em;
+  text-transform: lowercase;
+  text-align: center;
+  right: -70px;
+
+
+}
 #page-indicator{
   position: fixed;
   bottom: 10px;
   left: 50px;
 }
+
+#page-socials{
+  position: fixed;
+  bottom: 10px;
+  right: 45px;
+}
+
+#socials-list li{
+  display:inline;
+}
+
 /*section 1: intro*/
 #section1 {
-  padding: 0% 20% 2%;
+  padding: 0% 15% 2%;
 
 }
 
 .logosvg {
-  width: 6%;
-  margin-top: 50px;
+  width: 50%;
 
 }
 
+.row{
+  margin-right:0;
+  margin-left:0;
+}
 
 .logoholder {
+  width: inherit;
   position: fixed;
+  padding-top: 7%;
   padding-left: 0;
   padding-right: 5%;
   z-index: 1;
 }
 
 .container-introtext {
-
+  padding-top: 10%;
 }
 
 .introtext {
-  padding-top: 1%;
+}
+
+.introtext1 {
 }
 
 
 
 .introtext1 p {
   z-index: -1;
- font-family: 'Monda', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
  line-height: 2;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
 }
 
 .introtext2 p {
   z-index: -1;
- font-family: 'Monda', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
  line-height: 2;
   color: black;
   font-size: 13px;
@@ -206,16 +261,17 @@ span.logointro {
 }
 
 .introheader{
-  padding: 5% 0%;
 
 }
 
 #clock {
-  font-size: 15px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin:0;
   text-align: left;
-  font-family: 'Monda', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: darkgrey;
 }
 
 
@@ -310,26 +366,72 @@ span.logointro {
   top: 10px;
 }
 
-.section {
 
 
-  }
+#section2 {
+  padding: 0% 15% 2%;
 
-  .s2 {
-  padding: 0% 20% 2%;
 }
 
-.s3 {
-padding: 0% 20% 2%;
-}
-.s4 {
-padding: 0% 20% 2%;
+#section3 {
+  padding: 0% 15% 2%;
+
 }
 
-.s4 h2{
-  font-size: 40px;
+.container-section3{
+  padding-top: 10%;
 }
-#section2
+
+.workimages {
+  padding-top:10px;
+  padding-left:0;
+  padding-right:0;
+
+}
+
+.hovercontainer{
+  position: relative;
+}
+
+.hovercontainerB{
+  position: relative;
+  width: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: white;
+
+}
+
+.hovercontainer :hover .overlay {
+  opacity: 0.9;
+}
+
+.hovercontainerB :hover .overlay {
+  opacity: 0.9;
+}
+
+.texthover {
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .company-text h4 {
   z-index: -1;
@@ -624,17 +726,17 @@ padding: 0% 20% 2%;
 /*Media Queries*/
 @media only screen and (max-width: 812px) and (min-width: 320px) {
   p {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-
-  h2 {
-    font-size: 40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
     font-weight: 400;
+    color: black;
+    letter-spacing: .028em;
     -webkit-font-smoothing: antialiased;
   }
+
+
 
   h3 {
     font-size: 12px;
@@ -649,6 +751,11 @@ padding: 0% 20% 2%;
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  h4{
+    font-size: 50px;
+    text-align: center;
   }
 
   a {
@@ -666,7 +773,17 @@ padding: 0% 20% 2%;
 
 
   #section1 {
-    padding: 5% 10% 2%;
+    padding: 5% 5% 2%;
+
+  }
+
+  #section2 {
+    padding: 5% 5% 2%;
+
+  }
+
+  #section3 {
+    padding: 5% 5% 2%;
 
   }
 
@@ -734,9 +851,7 @@ padding: 5% 10% 2%;
 
 
 
-  #section2 {
-    padding: 0
-  }
+
 
   .content4left h4 {
     font-family: 'Roboto', sans-serif;
