@@ -1,23 +1,12 @@
-new fullpage('#fullpage', {
-	//options here
-	autoScrolling:true,
-	navigation: true,
-  navigationTooltips: ['Home', 'About', 'Work', 'Contact'],
-  scrollingSpeed: 1500
-});
-
-//methods
-fullpage_api.setAllowScrolling(true);
-
-
-
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("mySidenav").style.width = "100%";
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  document.getElementById("mySidenav").style.width = "0";
 }
+
+
 // //sticky pin 2/
 //
 // $(function () { // wait for document ready
