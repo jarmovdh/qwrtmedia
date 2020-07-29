@@ -6,6 +6,46 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+// init controller
+var controller = new ScrollMagic.Controller();
+
+// build scenes
+new ScrollMagic.Scene({
+    triggerElement: "#section1",
+    duration: "100%"
+  })
+  .setClassToggle("#li1", "active") // add class toggle
+  .addTo(controller);
+new ScrollMagic.Scene({
+    triggerElement: "#section2",
+    duration: 2100
+  })
+  .setClassToggle("#li2", "active") // add class toggle
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+    triggerElement: "#section3",
+    duration: 980
+  })
+  .setClassToggle("#li3", "active") // add class toggle
+  .addTo(controller);
+new ScrollMagic.Scene({
+    triggerElement: "#clients",
+    duration: 260
+  })
+  .setClassToggle("#li4", "active") // add class toggle
+  .addTo(controller);
+new ScrollMagic.Scene({
+    triggerElement: "#contact"
+  })
+  .setClassToggle("#li5", "active") // add class toggle
+  .addTo(controller);
+
+
+
+
+
+
 
 // //sticky pin 2/
 //
@@ -128,11 +168,14 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('clock').innerHTML =
-  h + ":" + m + ":" + s;
+    h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
+
 function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  if (i < 10) {
+    i = "0" + i
+  }; // add zero in front of numbers < 10
   return i;
 }
 
@@ -319,31 +362,31 @@ var scene = new ScrollMagic.Scene({
   .addTo(controller)
   .reverse(true);
 
-  var controller2 = new ScrollMagic.Controller();
-  var tl2 = new TimelineMax();
+var controller2 = new ScrollMagic.Controller();
+var tl2 = new TimelineMax();
 
 
 
-  tl2.from(".mockup", {
-    duration: 2,
-    x: -200,
-    opacity: 0,
-    delay: 2,
-  });
+tl2.from(".mockup", {
+  duration: 2,
+  x: -200,
+  opacity: 0,
+  delay: 2,
+});
 
 
-  var scene = new ScrollMagic.Scene({
-      triggerElement: "#section3",
-      triggerHook: 2,
-      duration: "70%"
-    })
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#section3",
+    triggerHook: 2,
+    duration: "70%"
+  })
 
-    .addIndicators({
-      colorTrigger: "red",
-      colorStart: "red",
-      colorEnd: "red",
-      indent: 5
-    })
-    .setTween(tl2)
-    .addTo(controller2)
-    .reverse(false);
+  .addIndicators({
+    colorTrigger: "red",
+    colorStart: "red",
+    colorEnd: "red",
+    indent: 5
+  })
+  .setTween(tl2)
+  .addTo(controller2)
+  .reverse(false);

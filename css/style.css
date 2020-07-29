@@ -32,6 +32,9 @@ h1 {
   text-align: left;
 }
 
+.active{
+  font-weight: bold;
+}
 h2 {
   font-size: 40px;
   text-align: left;
@@ -50,6 +53,7 @@ h3 {
   line-height: 0.8;
   -webkit-font-smoothing: antialiased;
   text-decoration: underline;
+
 }
 
 h4 {
@@ -87,6 +91,16 @@ button {
   float: right;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
+  color: black;
+
+}
 
 /*Custom Cursor*/
 .cursor {
@@ -253,6 +267,8 @@ button {
   display:inline;
 }
 
+
+
 /*section 1: intro*/
 #section1 {
   padding: 0% 15% 2%;
@@ -267,6 +283,8 @@ button {
 .row{
   margin-right:0;
   margin-left:0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .logoholder {
@@ -434,6 +452,16 @@ span.logointro {
   padding: 0% 15% 2%;
 
 }
+
+#contact{
+  padding: 0% 15% 2%;
+}
+
+#clients{
+  padding-bottom: 5%;
+}
+
+
 
 .container-section3{
   padding-top: 10%;
@@ -640,15 +668,14 @@ span.logointro {
 /*clients logo*/
 
 .clientsholder {
-  padding: 0 15px;
+  padding: 0;
 }
 
 .contentclients{
   padding: 0 5%;
 }
 .clientslogo {
-  max-width: 95%;
-  color:#808080;
+  max-width: 70%;
 
 }
 
