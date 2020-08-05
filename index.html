@@ -14,7 +14,6 @@
   <!--Google Fonts-->
 
 
-
   <!-- Bootsrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -28,15 +27,32 @@
 
 
 
-
 </head>
 
-<body onload="startTime()">
-
-
+<body>
   <div class="cursor"></div>
+  <div class="loader">
+    <div id="precarousel" class="carousel-fade" data-ride="carousel" data-interval="300">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/workpands.jpg"  alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/imagegallery/NBgarage-8.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/imagegallery/portrait-1.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/imagegallery/Cargarage.jpg" alt="4 slide">
+    </div>
+  </div>
 
+</div>
+</div>
 
+  </div>
+<section class="main">
 
 
   <header id="header">
@@ -46,38 +62,32 @@
       <div class="overlaymenu">
 
 
-      <h5>
-        We are currently available for your project. If you’d like to partner on a project or just chat about what we could do together, email us:
-hello@qwrt.nl
-<br />
-<br />
-      </h5>
-      <h5>Or get in contact via our socials:</h5>
-      <img class="socialicons"
-  src="images/linkedinw.svg"
-  alt="linkedin"
-  height="30"
-  width="30"
-  />
-  <img class="socialicons"
-src="images/instagramw.svg"
-alt="linkedin"
-height="30"
-width="30"
-fill="#fff" />
-<img class="socialicons"
-src="images/spotifyw.svg"
-alt="linkedin"
-height="30"
-width="30" />
-        </div>
+        <h5>
+          We are currently available for your project. If you’d like to partner on a project or just chat about what we could do together, email us:
+          hello@qwrt.nl
+          <br />
+          <br />
+        </h5>
+        <h5>Or get in contact via our socials:</h5>
+        <ul id="socials-list">
+          <li>
+            <a href="https://www.linkedin.com/in/jarmo-van-der-heul-77b824106/" target="_blank"><img class="socialicons" src="images/linkedinw.svg" alt="linkedin" height="30" width="30" /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jarmo-van-der-heul-77b824106/" target="_blank"><img class="socialicons" src="images/instagramw.svg" alt="linkedin" height="30" width="30" /></a>
+
+          </li>
+          <li>
+      <a href="https://open.spotify.com/playlist/6WPnHQ0zxOzACDfdghdPAA?si=ylJ-gCtwRTK71I9D4eZ2Xw" target="_blank"><img class="socialicons" src="images/spotifyw.svg" alt="linkedin" height="30" width="30" /></a>
+
+          </li>
+
+        </ul>
+      </div>
     </div>
     <span class="button .d-lg-none .d-xl-block" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-
     <div class="row">
-
-
 
       <div class="logoholder col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aos="fade-in" data-aos-easing="ease-in-sine">
 
@@ -87,8 +97,6 @@ width="30" />
 
         <div id="clock"></div>
 
-
-
         <ul class="headnav">
           <li id="li1"><a href="#section1">about</a></li>
           <li id="li2"><a href="#section2">work</a></li>
@@ -97,40 +105,19 @@ width="30" />
           <li id="li5"><a href="#contact">contact</a></li>
         </ul>
 
-
-
-
       </div>
-
-
 
     </div>
 
-
-
   </header>
 
-
   </div>
-
   <div id="page-socials">
     <ul id="socials-list">
       <li>
-        <img
-    src="images/linkedin.svg"
-    alt="linkedin"
-    height="12"
-    width="12" />
-    <img
-src="images/instagram.svg"
-alt="linkedin"
-height="12"
-width="12" />
-<img
-src="images/spotify.svg"
-alt="linkedin"
-height="12"
-width="12" />
+        <a href="https://www.linkedin.com/in/jarmo-van-der-heul-77b824106/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" height="12" width="12" /></a>
+        <img src="images/instagram.svg" alt="linkedin" height="12" width="12" />
+        <a href="https://open.spotify.com/playlist/6WPnHQ0zxOzACDfdghdPAA?si=ylJ-gCtwRTK71I9D4eZ2Xw" target="_blank"><img src="images/spotify.svg" alt="linkedin" height="12" width="12" /></a>
 
       </li>
     </ul>
@@ -143,11 +130,7 @@ width="12" />
 
   <section id="section1">
 
-
-
-
     <div class="row">
-
 
       <div class="container-introtext col-lg-6 col-md-12 col-sm-12" data-aos="fade-in">
         <div class="introheader">
@@ -164,24 +147,20 @@ width="12" />
           たてすか | QWRT | is an Amsterdam based creative agency with a focus on strategy, webdesign, copywriting and photography.
           <br />
           <br />
-          We help ambitious startups, brands and creatives to build a convincing online presence. Our purpose is to create impactful websites optimized to drive traffic, engagement, and conversion. We help clients solve business problems by fusing creativity, innovation, strategy, and craft.
+          A website is your business’ online representation, doing it right can take your activity to the next level. We create eye-candy and user-friendly websites. Modern & responsive for mobile devices.
+          We help ambitious startups, brands and creatives to build a convincing online presence. Our purpose is to create impactful websites optimized to drive traffic, engagement, and conversion. We help clients solve business problems by fusing
+          creativity, innovation, strategy, and craft.
           As a full service agency, we mix creativity and technical knowledge on strategy and webdesign with our passion to produce photo and editorial content. and ensure that your website is optimized for a successful future.
 
           <br />
           <br />
-          we are passionate digital creatives who just love the web and its unlimted possibilities.
-          We help ambitious companies and creatives to represent a convincing online presents, to create strong brand experiences and services, and to develop an inspirational brand culture.
-          We bring together innovation, design, technology and business strategy to build
-          websites and digital content.
+          We will bring you the online exposure you need to succeed. From basic Search Engine Optimization (SEO) to advanced Social Media Marketing campaigns, we do that by providing you with the best options for your budget.
           <br />
 
 
         </p>
       </div>
-
-
     </div>
-
     <span class="arrow" style='font-size:40px ;'>&#8595;</span>
 
     </div>
@@ -189,13 +168,7 @@ width="12" />
   </section>
 
   <section id="section2">
-
-
-
-
     <div class="row">
-
-
       <div class="container-second col-lg-12 col-md-12 col-sm-12">
         <div class="" data-aos="fade-up">
           <h4>We combine strategy, webdesign and copywriting to bridge the gap between digital and physical touch points.</h4>
@@ -269,8 +242,6 @@ width="12" />
             </div>
 
           </div>
-
-
         </div>
 
       </div>
@@ -304,24 +275,11 @@ width="12" />
           </div>
         </div>
 
-
-
-
-
-
-
-
-
   </section>
 
   <section id="section3">
 
-
-
-
     <div class="row">
-
-
       <div class="container-section3 col-lg-6 col-md-12 col-sm-12">
         <div class="section3-header" data-aos="fade-up">
 
@@ -341,9 +299,9 @@ width="12" />
           lives on it in order to identify solutions to better communicate your products, services, or purpose.
           <br />
           <br />
+
           For us there isn’t a one-size-fits-all formula to anything. Finding the right approach while working collaboratively with our clients, partners and friends is a pleasure for everyone of us. From world renown brands to early stage startups,
           we don't put boundaries on the type of client we work with. As long as the project requires creativity and innovation we will be thrilled to step outside our comfort zone to dsicvoer a whole new project
-
 
         </p>
       </div>
@@ -355,10 +313,7 @@ width="12" />
           SEO Strategy, Social Media Strategy, Web Design, Mobile Design, E-commerce, Web Development, Social Media Campaigns, SEO, E-Mail Marketing, Social Media Marketing, Photography (film & digital), Product Photography, Copywriting (SEO, Web),
           Social Media Content.
         </p>
-
-
       </div>
-
       <div class="container-clients col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" id="clients">
 
         <h2>Clients</h2>
@@ -371,27 +326,15 @@ width="12" />
           <div class="col-lg-3 col-md-3 col-sm-3 col-3"><img class="clientslogo" src="images/keycontent.png" alt="keycontent"></div>
           <div class="col-lg-3 col-md-3 col-sm-3 col-3"><img class="clientslogo" src="images/reeboklogo.png" alt="reebok"></div>
         </div>
-
-
       </div>
 
-
-
     </div>
-
-
     </div>
 
   </section>
 
   <section id="contact">
-
-
-
-
     <div class="row">
-
-
       <div class="container-contact col-lg-12 col-md-12 col-sm-12">
         <div class="contacttext" data-aos="fade-up">
 
@@ -402,32 +345,13 @@ width="12" />
         </div>
       </div>
 
-
-
-
     </div>
-
-
-
 
   </section>
 
-
-
   </div>
 
-
-
-
-
-
-
-
-
-
   </div>
-
-
 
   <footer id="footer">
     <div class="footcontainer">
@@ -444,7 +368,7 @@ width="12" />
       </div>
     </div>
   </footer>
-
+</section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>

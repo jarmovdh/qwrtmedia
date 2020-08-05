@@ -1,5 +1,5 @@
 /*Prime elements*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -18,11 +18,10 @@ body {
   color: black;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
-
 }
 
 ul {
-  padding:0;
+  padding: 0;
 }
 
 h1 {
@@ -32,9 +31,6 @@ h1 {
   text-align: left;
 }
 
-.active{
-  font-weight: bold;
-}
 h2 {
   font-size: 40px;
   text-align: left;
@@ -53,7 +49,6 @@ h3 {
   line-height: 0.8;
   -webkit-font-smoothing: antialiased;
   text-decoration: underline;
-
 }
 
 h4 {
@@ -67,13 +62,12 @@ h4 {
   text-decoration: underline;
 }
 
-h5{
+h5 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-align: left;
   font-size: 35px;
   color: white;
-
 }
 
 p {
@@ -97,10 +91,9 @@ a {
   color: black;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
   color: black;
-
 }
 
 /*Custom Cursor*/
@@ -134,35 +127,18 @@ a:hover{
   }
 }
 
-/* #wrapper {
-  width: 100vw;
-  height: 100vh;
-} */
-
-.load-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 10;
-  pointer-events: none;
-}
-
 /*header nav*/
 #header {
   padding: 0% 5% 0% 5%;
-
 }
 
-.button{
-  position:absolute;
+/*overlaymenu button*/
+.button {
+  position: absolute;
   right: 7%;
   top: 3%;
   visibility: hidden;
 }
-
 
 .sidenav {
   height: 100%;
@@ -175,7 +151,6 @@ a:hover{
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-
 }
 
 .sidenav a {
@@ -200,51 +175,47 @@ a:hover{
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 .headnav {
   margin-top: 50px;
 }
-.headnav li{
+
+.headnav li {
   width: 100px;
-   list-style-type: none;
-   padding: 0;
-   padding-left:0;
-   margin:0px;
-   letter-spacing: 0.05em;
-   line-height: 1rem;
-   font-size: .875rem;
-    text-transform: lowercase;
+  list-style-type: none;
+  padding: 0;
+  padding-left: 0;
+  margin: 0px;
+  letter-spacing: 0.05em;
+  line-height: 1rem;
+  font-size: .875rem;
+  text-transform: lowercase;
 }
 
 .headnav ul {
-   padding-left: 0;
-
+  padding-left: 0;
 }
 
-.overlaymenu{
+.active {
+  font-weight: bold;
+}
+
+.overlaymenu {
   padding: 5% 5% 2%;
-
 }
 
-.socialicons{
-}
+.socialicons {}
 
-.contacttext{
-}
-
-.contacttext p{
-  z-index: -1;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 2;
-  color: #888888;
-  font-size: 15px;
-  text-align: justify;
-}
-
-.sidebar{
+/*sidebar*/
+.sidebar {
   position: fixed;
   top: 50%;
   transform: rotate(-90deg);
@@ -253,41 +224,31 @@ a:hover{
   text-transform: lowercase;
   text-align: center;
   right: -70px;
-
-
-}
-#page-indicator{
-  position: fixed;
-  bottom: 10px;
-  left: 50px;
 }
 
-#page-socials{
+/*page socials bottom right*/
+#page-socials {
   position: fixed;
   bottom: 10px;
   right: 45px;
 }
 
-#socials-list li{
-  display:inline;
+#socials-list li {
+  display: inline;
 }
-
-
 
 /*section 1: intro*/
 #section1 {
   padding: 0% 15% 2%;
-
 }
 
 .logosvg {
   width: 45%;
-
 }
 
-.row{
-  margin-right:0;
-  margin-left:0;
+.row {
+  margin-right: 0;
+  margin-left: 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -305,185 +266,103 @@ a:hover{
   padding-top: 10%;
 }
 
-.introtext {
-}
+.introtext {}
 
-.introtext1 {
-}
-
-
+.introtext1 {}
 
 .introtext1 p {
   z-index: -1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
- line-height: 2;
+  line-height: 2;
   color: black;
   font-size: 16px;
   text-align: justify;
 }
 
-.introtext2 p {
-  z-index: -1;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
- line-height: 2;
-  color: black;
-  font-size: 13px;
-  text-align: justify;
-}
-
-span.logointro {
-  display: inline-block;
-  font-weight: lighter;
-  text-decoration: underline;
-}
-
-.leftIntro {
-  padding-top: 2%;
-}
-
-.introheader{
-
-}
-
 #clock {
   font-size: 14px;
   letter-spacing: 0.05em;
-  margin:0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
   text-align: left;
-  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
-
-
-
-
-
 
 .arrow {
   padding-left: 10px;
   padding-top: 50px;
   color: darkgrey;
   font-weight: lighter;
+}
+
+/*loader*/
+
+.main {
+  width: 100%;
+  opacity: 0;
+  display: none;
+  transition: opacity 2s ease-in;
+}
+
+.loader{
+  height: 50px;
+  position: absolute;
+  top: 0;
+  height: 50vh;
 
 }
 
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-ms-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  }
-}
-@mixin animation($animation) {
-  -webkit-animation: #{$animation};
-	-moz-animation: #{$animation};
-	-ms-animation: #{$animation};
-	animation: #{$animation};
-}
-@mixin transform($transform) {
-  -webkit-transform: $transform;
-  -moz-transform: $transform;
-  -ms-transform: $transform;
-  transform: $transform;
-}
-
-@include keyframes(bouncebounce) {
-	0% {
-    bottom: 22px;
-  }
-	100% {
-    bottom: 40px;
-  }
-}
-
-@-webkit-keyframes bounce {
-    0% { transform: translateY(-5px)  }
-    50% { transform: translateY(10px) }
-    100% { transform: translateY(-5px) }
-}
-
-@keyframes bounce {
-    0% { transform: translateY(-5px)  }
-    50% { transform: translateY(10px) }
-    100% { transform: translateY(-5px) }
-}
-
-.arrowup {
-  color: darkgrey;
-  font-weight: lighter;
-  text-align: right;
-  float: right;
-  position: fixed;
-  bottom: 0;
-}
-
-
-
-.imagecontainer {
-  position: static;
-  height: auto;
-}
-
-
-
-#imagesequence {
-  vertical-align: top;
-  position: sticky;
-  top: 4rem;
-  z-index: -1;
-}
-
-.triggerpin1 {
-  position: sticky;
-  top: 10px;
+#precarousel{
+  width: 100%;
+  height: 100vh;
 }
 
 
 
 #section2 {
   padding: 0% 15% 2%;
-
 }
 
 #section3 {
   padding: 0% 15% 2%;
-
 }
 
-#contact{
+/*section contact*/
+#contact {
   padding: 0% 15% 2%;
 }
 
-#clients{
+.contacttext {}
+
+.contacttext p {
+  z-index: -1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 2;
+  color: #888888;
+  font-size: 15px;
+  text-align: justify;
+}
+
+#clients {
   padding-bottom: 5%;
 }
 
-
-
-.container-section3{
+.container-section3 {
   padding-top: 10%;
 }
 
+/*Work section and images */
 .workimages {
-  padding-top:10px;
-  padding-left:0;
-  padding-right:0;
-
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.hovercontainer{
+.hovercontainer {
   position: relative;
 }
 
-.hovercontainerB{
+.hovercontainerB {
   position: relative;
   width: auto;
 }
@@ -499,7 +378,6 @@ span.logointro {
   opacity: 0;
   transition: 1s ease;
   background-color: white;
-
 }
 
 .hovercontainer :hover .overlay {
@@ -523,147 +401,13 @@ span.logointro {
   text-align: center;
 }
 
-.company-text h4 {
-  z-index: -1;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.3;
-  color: #888888;
-  font-size: 15px;
-  text-align: justify;
-}
-
-.line {
-      display:inline-block;
-      border-right: 4px solid rgba(255, 255, 255, 0.75);
-      white-space: nowrap;
-      overflow: hidden;
-
-      vertical-align: top;
-}
-
-/*Animation*/
-
-.anim-typewriter {
-      animation: typewriter 4s steps(15) 1s 1 normal both,
-      blinkTextCursor 1000ms steps(45) infinite normal;
-}
-
-@keyframes typewriter {
-      from {
-            width: 0;
-      }
-      to {
-            width: 7em;
-      }
-}
-
-@keyframes blinkTextCursor {
-      from {
-            border-right-color:black;
-      }
-      to {
-            border-right-color: transparent;
-      }
-}
-
-
-.mockup {
-  position: absolute;
-  z-index: -1;
-  left: -160px;
-  margin-top: 40px;
-}
-
-
-#section2photo {
-  padding: 5% 5%;
-}
-
-.imagecontainer {
-  padding-top: 10px;
-}
-
-.imagecontainer2 {
-  padding-top: 50px;
-}
-
-
-
-.photorow {
-  display: -ms-flexbox;
-  /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create two equal columns that sits next to each other */
-.photocolumn {
-  -ms-flex: 50%;
-  /* IE10 */
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 4px;
-}
-
-.photocolumn img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.photorow {
-  cursor: url('../images/mcursor.png'), auto;
-}
-
-.photorow a:link {
-  cursor: url('../images/cursorpoint.png'), auto;
-}
-
-.photorow:hover {
-  cursor: url('../images/mcursor.png'), auto;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .photocolumn {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .photocolumn {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#section5 {
-  padding: 5% 20% 2%;
-}
-
-#section5 a {
-  display: inline;
-  color: darkgrey;
-  text-decoration: underline;
-  background-color: transparent;
-}
-
 .contacttext {
-  padding-left:0px;
-  padding-right:0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
-
 
 /*clients logo*/
-.container-clients{
+.container-clients {
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -672,23 +416,18 @@ span.logointro {
   padding: 0;
 }
 
-.contentclients{
+.contentclients {
   padding: 0 5%;
 }
+
 .clientslogo {
   max-width: 70%;
-
 }
 
 /* footer section */
 #footer {
   z-index: 1;
-  padding:0% 3%;
-
-}
-
-.footcontainer {
-
+  padding: 0% 3%;
 }
 
 #footer p {
@@ -730,7 +469,6 @@ span.logointro {
   font-size: 1rem;
   text-decoration: none;
 }
-
 
 /*singlepages*/
 #project {
@@ -806,8 +544,6 @@ span.logointro {
   padding-left: 0;
 }
 
-
-
 /*Media Queries*/
 @media only screen and (max-width: 812px) and (min-width: 320px) {
   p {
@@ -820,8 +556,6 @@ span.logointro {
     letter-spacing: .028em;
     -webkit-font-smoothing: antialiased;
   }
-
-
 
   h3 {
     font-size: 30px;
@@ -837,20 +571,27 @@ span.logointro {
     font-size: 1.5rem;
   }
 
-  h4{
+  h4 {
     font-size: 50px;
     text-align: left;
     padding-left: 0;
     padding-right: 0;
   }
 
+  .sidenav a {
+    display: inline;
+    padding: 1px;
+  }
   a {
+    display: inline;
     margin: 0;
     text-decoration: none;
+
   }
 
-  .button{
-    position:absolute;
+
+  .button {
+    position: absolute;
     right: 5%;
     top: 3%;
     z-index: 1;
@@ -861,23 +602,22 @@ span.logointro {
     display: none;
     margin-top: 50px;
   }
-  .headnav li{
+
+  .headnav li {
     width: 100px;
-     list-style-type: none;
-     padding: 0;
-     padding-left:0;
-     margin:0px;
-     letter-spacing: 0.05em;
-     line-height: 1rem;
-     font-size: .875rem;
-      text-transform: lowercase;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 0;
+    margin: 0px;
+    letter-spacing: 0.05em;
+    line-height: 1rem;
+    font-size: .875rem;
+    text-transform: lowercase;
   }
 
   .headnav ul {
-     padding-left: 0;
-
+    padding-left: 0;
   }
-
 
   .logoholder {
     position: absolute;
@@ -887,70 +627,66 @@ span.logointro {
     z-index: 1;
   }
 
+  #socials-list{
+    display: inline;
+  }
+
+  #socials-list li {
+    display: inline;
+  }
+
   .logosvg {
     width: 40%;
   }
+
   .cursor {
     display: none;
   }
-
 
   .sidebar {
     display: none;
   }
 
+
   #section1 {
     padding: 5% 5% 2%;
-
   }
 
   #section2 {
     padding: 5% 5% 2%;
-
   }
 
   #section3 {
     padding: 5% 5% 2%;
-
   }
 
   #contact {
     padding: 5% 5% 2%;
   }
 
-  .section {
-
-
-    }
-
-    .s2 {
-padding: 5% 10% 2%;
-
-  }
-
   .introtext {
     padding-top: 5%;
   }
 
-
   .introtext1 p {
     font-size: 13px;
   }
+
   .container-introtext {
     padding-left: 0;
     padding-right: 0;
   }
 
- .container-introtext p{
-   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-   text-align: justify;
-   font-size: 1em;
-   line-height: 1.5;
-   font-weight: 400;
-   color: black;
-   letter-spacing: .028em;
-   -webkit-font-smoothing: antialiased;
- }
+  .container-introtext p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+    color: black;
+    letter-spacing: .028em;
+    -webkit-font-smoothing: antialiased;
+  }
 
   .container1 p {
     text-align: left;
@@ -972,34 +708,30 @@ padding: 5% 10% 2%;
     padding-right: 0;
   }
 
-
-  .container-second{
+  .container-second {
     padding-left: 0;
     padding-right: 0;
   }
 
-
-  .container-second p{
-
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-align: justify;
-      font-size: 1em;
-      line-height: 1.5;
-      font-weight: 400;
-      color: black;
-      letter-spacing: .028em;
-      -webkit-font-smoothing: antialiased;
-
+  .container-second p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+    color: black;
+    letter-spacing: .028em;
+    -webkit-font-smoothing: antialiased;
   }
 
-#page-socials{
-  display: none;
-}
-  .workimages {
-    padding-top:10px;
-    padding-left:0;
-    padding-right:0;
+  #page-socials {
+    display: none;
+  }
 
+  .workimages {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .hovercontainer {
@@ -1017,39 +749,30 @@ padding: 5% 10% 2%;
     padding-right: 0;
   }
 
-.container-section3{
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.container-section3 p{
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-align: justify;
-      font-size: 1em;
-      line-height: 1.5;
-      font-weight: 400;
-      color: black;
-      letter-spacing: .028em;
-      -webkit-font-smoothing: antialiased;
-
-}
-
-.container-clients {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 0;
-  padding-right: 0;
-
-}
-
-  .rowhead {
-    position: absolute;
-    top: 10px;
-    right: 50px;
-    float: right;
+  .container-section3 {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .introheader{
+  .container-section3 p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+    color: black;
+    letter-spacing: .028em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container-clients {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .introheader {
     padding: 5% 0%;
     display: inline-block;
     margin-bottom: 20px;
@@ -1063,44 +786,6 @@ padding: 5% 10% 2%;
     font-weight: bold;
     padding-left: 1px;
   }
-
-
-
-
-
-  .content4left h4 {
-    font-family: 'Roboto', sans-serif;
-    color: #888888;
-    font-size: 13px;
-    text-align: left;
-    text-align: justify;
-  }
-
-  .conten4sub {
-    font-size: 0.8rem;
-  }
-
-
-
-
-
-
-  #section5{
-  padding: 22% 15% 2%;
-
-  }
-
-
-  #section5 h4 {
-    z-index: -1;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.3;
-    color: #888888;
-    font-size: 16px;
-    text-align: justify;
-  }
-
-
 
   a {
     display: block;
@@ -1117,21 +802,9 @@ padding: 5% 10% 2%;
     color: white;
   }
 
-
-
-  .clientshead p{
-    padding: 5%;
-    font-size: 0.9rem;
-    text-align: center;
-
-  }
   .clientslogo {
     max-width: 100%;
-
   }
-
-
-
 
   #footer {
     font-family: 'Roboto', sans-serif;
@@ -1139,9 +812,7 @@ padding: 5% 10% 2%;
     font-size: 8px;
   }
 
-  .footcontainer {
-
-  }
+  .footcontainer {}
 
   #footer p {
     font-size: 10px;
@@ -1158,8 +829,6 @@ padding: 5% 10% 2%;
     -webkit-text-fill-color: none;
     text-decoration: none;
   }
-
-
 
   .footnav {
     float: left;
@@ -1215,21 +884,9 @@ padding: 5% 10% 2%;
       display: none;
     }
 
-    #messenger {
-      transform: translate(-50%, -50%);
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-      font-size: 2.3rem;
-      text-align: center;
-      white-space: nowrap;
-      text-shadow: 0 2px 2px rgba(#000, 0.9);
-      left: 54%;
-    }
-
     .logosvg {
       width: 20%;
     }
-
 
     #section2 {
       padding: 5% 5% 0% 5%;
@@ -1246,82 +903,6 @@ padding: 5% 10% 2%;
     }
 
     #section3 {}
-
-    .content3left {
-      padding-top: 10%;
-    }
-
-    .content3left p {
-      font-size: 9rem;
-      line-height: inherit;
-    }
-
-    .image3 {
-      max-width: 100%;
-      max-height: auto;
-    }
-
-    .content4left h4 {
-      font-family: 'Roboto', sans-serif;
-      color: #ffcc00;
-      font-size: 13px;
-      text-align: left;
-      text-align: justify;
-      font-weight: bold;
-    }
-
-    .conten4sub {
-      font-size: 0.8rem;
-    }
-
-    .servcesImage {
-      max-width: 100%;
-      max-height: auto;
-    }
-
-    #section5 h3 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.8rem;
-      text-align: left;
-      -webkit-text-stroke-width: 0.5px;
-    }
-
-    .content4sub p {
-      font-size: 0.8rem;
-      line-height: 1.5;
-      letter-spacing: inherit;
-    }
-
-    .services {
-      padding: 2% 5%;
-      height: 100vh;
-    }
-
-    .services h4 {
-      position: relative;
-      color: #FFEF32;
-      font-size: 3.5rem;
-      font-family: 'Roboto', sans-serif;
-      text-align: left;
-    }
-
-    .services li {
-      padding: 2% 15%;
-      font-family: 'Monda', sans-serif;
-      font-size: 1.3rem;
-      line-height: 1.5;
-      color: #696969;
-      text-align: left;
-    }
-
-    .serviceA {
-      margin-top: 50px;
-      padding-left: 80px;
-    }
-
-    .serviceB {
-      margin-top: 20vh;
-    }
 
     a {
       display: block;
