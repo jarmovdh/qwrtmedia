@@ -281,7 +281,7 @@ a:hover{
 }
 
 .logosvg {
-  width: 50%;
+  width: 45%;
 
 }
 
@@ -824,14 +824,13 @@ span.logointro {
 
 
   h3 {
-    font-size: 12px;
-    line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    color: black;
-    -webkit-text-stroke-width: remove;
-    -webkit-text-stroke-color: remove;
-    -webkit-text-fill-color: remove;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 0.8;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: underline;
   }
 
   h1 {
