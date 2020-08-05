@@ -68,10 +68,11 @@ h4 {
 }
 
 h5{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-align: left;
-  font-size: 18px;
+  font-size: 35px;
+  color: white;
 
 }
 
@@ -223,8 +224,14 @@ a:hover{
 
 }
 
+.overlaymenu{
+  padding: 5% 5% 2%;
 
+}
 
+.socialicons{
+  color: white;
+}
 
 .contacttext{
 }
